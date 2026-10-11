@@ -7,6 +7,10 @@
 - **Searching**: Prefer ripgrep (`rtk rg` / `rg`) wherever possible over standard grep or raw file dumps to minimize token usage.
 - **Diagnostics & Testing**: Run `rtk test` or `rtk err` to isolate failures without context bloat.
 
+## Git & Workflow Guidelines
+- **No Unrequested Issues**: Never create GitHub issues automatically or proactively for each feature. Only create GitHub issues when explicitly requested by the user.
+- **No Unrequested Branches**: Do not create separate Git branches for features or changes unless the user explicitly asks for a branch. Work and commit directly on the active branch.
+
 ## Context-Mode Routing Guidelines
 - **Derive, Do Not Dump**: Do not dump entire files into context. Print only needed matches, counts, or slices.
 - **Tool Routing**:
