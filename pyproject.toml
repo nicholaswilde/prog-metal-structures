@@ -9,6 +9,7 @@ dependencies = [
     "httpx>=0.28.1",
     "jsonschema>=4.26.0",
     "music21>=9.9.2",
+    "pyarrow>=25.0.1",
     "pydantic>=2.14.0",
     "pyguitarpro>=0.11",
     "rich>=15.0.0",

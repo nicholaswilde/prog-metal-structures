@@ -33,15 +33,56 @@ prog-metal-structures/
 │   ├── raw/
 │   │   ├── guitar_pro/       # Raw .gp3, .gp4, .gp5 files
 │   │   └── midi/             # Raw .mid, .midi files
-│   └── processed/            # Normalized JSON track architectures
+│   └── processed/            # Processed datasets
+│       ├── *.json            # Normalized JSON track architectures
+│       ├── artists/          # Artist discography metadata
+│       ├── analysis/         # Metric complexity & transition matrices
+│       ├── prog_metal.db     # Unified relational SQLite database
+│       ├── tracks.parquet    # Columnar track metadata table
+│       └── measures.parquet  # Columnar measure-level sequences
 ├── schemas/
 │   ├── track_architecture.json  # Schema for measures, meters, tempos, sections
 │   └── artist_metadata.json     # Schema for discography and artist metadata
 ├── scripts/
-│   ├── parse_gp.py           # Ingestion stub for Guitar Pro tabs
-│   └── parse_midi.py         # Ingestion stub for MIDI sequences
+│   ├── export_datasets.py    # Exporter for SQLite (prog_metal.db) & Parquet
+│   ├── parse_gp.py           # Ingestion for Guitar Pro tabs
+│   └── parse_midi.py         # Ingestion for MIDI sequences
 └── README.md
 ```
+
+---
+
+## Querying the Dataset
+
+### SQLite Database (`data/processed/prog_metal.db`)
+
+```sql
+-- Top 5 tracks by metric entropy
+SELECT title, artist, metric_entropy, unique_meters
+FROM complexity_metrics
+ORDER BY metric_entropy DESC
+LIMIT 5;
+
+-- Find measures in 11/8 across all tracks
+SELECT m.track_id, t.title, t.artist, m.measure_number, m.tempo_bpm
+FROM measures m
+JOIN tracks t ON m.track_id = t.track_id
+WHERE m.time_signature = '11/8';
+```
+
+### Zero-Copy Parquet Queries (DuckDB / Python)
+
+```python
+import duckdb
+
+duckdb.sql("""
+  SELECT artist, COUNT(*) AS track_count, ROUND(AVG(total_measures), 1) AS avg_measures
+  FROM 'data/processed/tracks.parquet'
+  GROUP BY artist
+  ORDER BY track_count DESC;
+""").show()
+```
+
 
 ---
 
