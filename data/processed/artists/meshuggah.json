@@ -14,18 +14,18 @@
     {
       "album_id": "nothing",
       "title": "Nothing",
-      "release_year": 2000,
-      "total_tracks": 1,
+      "release_year": 2002,
+      "total_tracks": 10,
       "parsed_tracks_count": 1,
       "track_ids": [
         "meshuggah_rational_gaze"
       ]
     },
     {
-      "album_id": "destroy,_erase,_improve",
-      "title": "Destroy, Erase, Improve",
-      "release_year": 2000,
-      "total_tracks": 1,
+      "album_id": "destroy_erase_improve",
+      "title": "Destroy Erase Improve",
+      "release_year": 1995,
+      "total_tracks": 10,
       "parsed_tracks_count": 1,
       "track_ids": [
         "meshuggah_future_breed_machine"

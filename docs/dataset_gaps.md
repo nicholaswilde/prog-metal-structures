@@ -1,8 +1,8 @@
 # Progressive Metal Dataset: Data Gap & Completeness Report
 
-**Overall Discography Coverage**: 41.0%
-**Parsed Tracks**: 50 | **Expected Discography Tracks**: 122
-**Tracked Artists**: 9 | **Tracked Albums**: 35
+**Overall Discography Coverage**: 22.9%
+**Parsed Tracks**: 58 | **Expected Discography Tracks**: 253
+**Tracked Artists**: 9 | **Tracked Albums**: 26
 
 ---
 
@@ -10,41 +10,32 @@
 
 | Artist | Album | Year | Parsed / Total | Coverage % | Status |
 | :--- | :--- | :---: | :---: | :---: | :--- |
-| Epica | Requiem for the Indifferent | 2012 | 1 / 13 | 7.7% | 12 missing |
-| Tool | Lateralus | 2001 | 1 / 13 | 7.7% | 12 missing |
+| Epica | The Quantum Enigma | 2014 | 1 / 13 | 7.7% | 12 missing |
 | Animals as Leaders | Weightless | 2011 | 1 / 12 | 8.3% | 11 missing |
+| Megadeth | The Beavis and Butt-Head Experience | 1993 | 1 / 12 | 8.3% | 11 missing |
+| Between the Buried and Me | Alaska | 2005 | 1 / 11 | 9.1% | 10 missing |
+| Dream Theater | Awake | 1994 | 1 / 11 | 9.1% | 10 missing |
 | Epica | Consign to Oblivion | 2005 | 1 / 11 | 9.1% | 10 missing |
-| Epica | The Phantom Agony | 2003 | 1 / 9 | 11.1% | 8 missing |
+| Meshuggah | Nothing | 2002 | 1 / 10 | 10.0% | 9 missing |
+| Meshuggah | Destroy Erase Improve | 1995 | 1 / 10 | 10.0% | 9 missing |
+| Haken | The Mountain | 2013 | 1 / 9 | 11.1% | 8 missing |
+| Opeth | My Arms, Your Hearse | 1998 | 1 / 9 | 11.1% | 8 missing |
+| Dream Theater | Octavarium | 2005 | 1 / 8 | 12.5% | 7 missing |
+| Dream Theater | Systematic Chaos | 2007 | 1 / 8 | 12.5% | 7 missing |
+| Opeth | Still Life | 1999 | 1 / 7 | 14.3% | 6 missing |
 | Epica | Design Your Universe | 2009 | 2 / 13 | 15.4% | 11 missing |
-| Opeth | Ghost Reveries | 2005 | 3 / 8 | 37.5% | 5 missing |
-| Opeth | Blackwater Park | 2001 | 5 / 8 | 62.5% | 3 missing |
-| Between the Buried and Me | Single / Tab Transcription | 2000 | 1 / 1 | 100.0% | **COMPLETE** |
-| Dream Theater | Train of Thought | 2000 | 2 / 2 | 100.0% | **COMPLETE** |
-| Dream Theater | Awake | 2000 | 1 / 1 | 100.0% | **COMPLETE** |
-| Dream Theater | Single / Tab Transcription | 2000 | 5 / 5 | 100.0% | **COMPLETE** |
-| Dream Theater | Metropolis PT.2: Scenes From A Memory | 2000 | 1 / 1 | 100.0% | **COMPLETE** |
-| Dream Theater | Octavarium | 2000 | 1 / 1 | 100.0% | **COMPLETE** |
-| Dream Theater | Scenes From A Memory | 2000 | 1 / 1 | 100.0% | **COMPLETE** |
-| Dream Theater | Systematic Chaos | 2000 | 1 / 1 | 100.0% | **COMPLETE** |
-| Epica | The Quantum Enigma | 2000 | 1 / 1 | 100.0% | **COMPLETE** |
-| Epica | We Will Take You With Us | 2000 | 1 / 1 | 100.0% | **COMPLETE** |
-| Epica | Single / Tab Transcription | 2000 | 1 / 1 | 100.0% | **COMPLETE** |
-| Epica | The Phantom Agony (2003) | 2000 | 1 / 1 | 100.0% | **COMPLETE** |
-| Epica | The Divine Conspiracy | 2000 | 1 / 1 | 100.0% | **COMPLETE** |
-| Epica | Retrospect | 2000 | 1 / 1 | 100.0% | **COMPLETE** |
-| Epica | Requien For The Indifferent | 2000 | 1 / 1 | 100.0% | **COMPLETE** |
-| Epica | Phanton Agony | 2000 | 1 / 1 | 100.0% | **COMPLETE** |
-| Haken | The Mountain (2013) | 2000 | 1 / 1 | 100.0% | **COMPLETE** |
-| Meshuggah | Nothing | 2000 | 1 / 1 | 100.0% | **COMPLETE** |
-| Meshuggah | Destroy, Erase, Improve | 2000 | 1 / 1 | 100.0% | **COMPLETE** |
-| Opeth | Deliverance | 2000 | 2 / 2 | 100.0% | **COMPLETE** |
-| Opeth | Watershed | 2000 | 3 / 3 | 100.0% | **COMPLETE** |
-| Opeth | Still Life | 2000 | 1 / 1 | 100.0% | **COMPLETE** |
-| Opeth | Ghost Reveries (2005) | 2000 | 1 / 1 | 100.0% | **COMPLETE** |
-| Opeth | Single / Tab Transcription | 2000 | 1 / 1 | 100.0% | **COMPLETE** |
-| Opeth | My arms, your hearse | 2000 | 1 / 1 | 100.0% | **COMPLETE** |
-| Tool | Single / Tab Transcription | 2000 | 1 / 1 | 100.0% | **COMPLETE** |
-| Unknown Artist | Single / Tab Transcription | 2000 | 1 / 1 | 100.0% | **COMPLETE** |
+| Epica | Requiem for the Indifferent | 2012 | 2 / 13 | 15.4% | 11 missing |
+| Dream Theater | A Change of Seasons | 1995 | 1 / 5 | 20.0% | 4 missing |
+| Epica | The Divine Conspiracy | 2007 | 3 / 13 | 23.1% | 10 missing |
+| Dream Theater | Images and Words | 1992 | 2 / 8 | 25.0% | 6 missing |
+| Dream Theater | Train of Thought | 2003 | 2 / 7 | 28.6% | 5 missing |
+| Dream Theater | Metropolis Pt. 2: Scenes from a Memory | 1999 | 4 / 12 | 33.3% | 8 missing |
+| Opeth | Deliverance | 2002 | 2 / 6 | 33.3% | 4 missing |
+| Tool | Lateralus | 2001 | 5 / 13 | 38.5% | 8 missing |
+| Epica | The Phantom Agony | 2003 | 4 / 9 | 44.4% | 5 missing |
+| Opeth | Watershed | 2008 | 4 / 7 | 57.1% | 3 missing |
+| Opeth | Blackwater Park | 2001 | 7 / 8 | 87.5% | 1 missing |
+| Opeth | Ghost Reveries | 2005 | 7 / 8 | 87.5% | 1 missing |
 
 ---
 
@@ -52,11 +43,11 @@
 
 | Quality Metric | Tracks Checked | Complete | Missing | Completeness % | Status |
 | :--- | :---: | :---: | :---: | :---: | :--- |
-| **Album Title** | 50 | 40 | 10 | 80.0% | Needs Review |
-| **Release Year** | 50 | 0 | 50 | 0.0% | Needs Review |
-| **Default Tempo (BPM)** | 50 | 50 | 0 | 100.0% | **OK** |
-| **Formal Section Breakdown** | 50 | 22 | 28 | 44.0% | Backlog Target |
-| **Measure Sequence Data** | 50 | 50 | 0 | 100.0% | **OK** |
+| **Album Title** | 58 | 58 | 0 | 100.0% | **OK** |
+| **Release Year** | 58 | 58 | 0 | 100.0% | **OK** |
+| **Default Tempo (BPM)** | 58 | 58 | 0 | 100.0% | **OK** |
+| **Formal Section Breakdown** | 58 | 26 | 32 | 44.8% | Backlog Target |
+| **Measure Sequence Data** | 58 | 58 | 0 | 100.0% | **OK** |
 
 ---
 
@@ -64,11 +55,11 @@
 
 Top albums recommended for upcoming ingestion batches based on missing track counts:
 
-1. **Epica — *Requiem for the Indifferent***: 1/13 parsed (12 tracks remaining)
-2. **Tool — *Lateralus***: 1/13 parsed (12 tracks remaining)
-3. **Animals as Leaders — *Weightless***: 1/12 parsed (11 tracks remaining)
-4. **Epica — *Consign to Oblivion***: 1/11 parsed (10 tracks remaining)
-5. **Epica — *The Phantom Agony***: 1/9 parsed (8 tracks remaining)
-6. **Epica — *Design Your Universe***: 2/13 parsed (11 tracks remaining)
-7. **Opeth — *Ghost Reveries***: 3/8 parsed (5 tracks remaining)
-8. **Opeth — *Blackwater Park***: 5/8 parsed (3 tracks remaining)
+1. **Epica — *The Quantum Enigma***: 1/13 parsed (12 tracks remaining)
+2. **Animals as Leaders — *Weightless***: 1/12 parsed (11 tracks remaining)
+3. **Megadeth — *The Beavis and Butt-Head Experience***: 1/12 parsed (11 tracks remaining)
+4. **Between the Buried and Me — *Alaska***: 1/11 parsed (10 tracks remaining)
+5. **Dream Theater — *Awake***: 1/11 parsed (10 tracks remaining)
+6. **Epica — *Consign to Oblivion***: 1/11 parsed (10 tracks remaining)
+7. **Meshuggah — *Nothing***: 1/10 parsed (9 tracks remaining)
+8. **Meshuggah — *Destroy Erase Improve***: 1/10 parsed (9 tracks remaining)

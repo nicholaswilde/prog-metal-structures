@@ -13,31 +13,36 @@
     {
       "album_id": "the_quantum_enigma",
       "title": "The Quantum Enigma",
-      "release_year": 2000,
-      "total_tracks": 1,
+      "release_year": 2014,
+      "total_tracks": 13,
       "parsed_tracks_count": 1,
       "track_ids": [
         "epica_memento"
       ]
     },
     {
-      "album_id": "we_will_take_you_with_us",
-      "title": "We Will Take You With Us",
-      "release_year": 2000,
-      "total_tracks": 1,
-      "parsed_tracks_count": 1,
+      "album_id": "the_phantom_agony",
+      "title": "The Phantom Agony",
+      "release_year": 2003,
+      "total_tracks": 9,
+      "parsed_tracks_count": 4,
       "track_ids": [
-        "epica_seif_al_din"
+        "epica_seif_al_din",
+        "epica_feint",
+        "epica_sensorium",
+        "epica_cry_for_the_moon"
       ]
     },
     {
-      "album_id": "single_/_tab_transcription",
-      "title": "Single / Tab Transcription",
-      "release_year": 2000,
-      "total_tracks": 1,
-      "parsed_tracks_count": 1,
+      "album_id": "the_divine_conspiracy",
+      "title": "The Divine Conspiracy",
+      "release_year": 2007,
+      "total_tracks": 13,
+      "parsed_tracks_count": 3,
       "track_ids": [
-        "epica_outrospect"
+        "epica_outrospect",
+        "epica_the_obsessive_devotion",
+        "epica_instrospect"
       ]
     },
     {
@@ -66,69 +71,10 @@
       "title": "Requiem for the Indifferent",
       "release_year": 2012,
       "total_tracks": 13,
-      "parsed_tracks_count": 1,
+      "parsed_tracks_count": 2,
       "track_ids": [
-        "epica_requiem_for_the_indifferent"
-      ]
-    },
-    {
-      "album_id": "the_phantom_agony",
-      "title": "The Phantom Agony",
-      "release_year": 2003,
-      "total_tracks": 9,
-      "parsed_tracks_count": 1,
-      "track_ids": [
-        "epica_feint"
-      ]
-    },
-    {
-      "album_id": "the_phantom_agony_(2003)",
-      "title": "The Phantom Agony (2003)",
-      "release_year": 2000,
-      "total_tracks": 1,
-      "parsed_tracks_count": 1,
-      "track_ids": [
-        "epica_sensorium"
-      ]
-    },
-    {
-      "album_id": "the_divine_conspiracy",
-      "title": "The Divine Conspiracy",
-      "release_year": 2000,
-      "total_tracks": 1,
-      "parsed_tracks_count": 1,
-      "track_ids": [
-        "epica_the_obsessive_devotion"
-      ]
-    },
-    {
-      "album_id": "retrospect",
-      "title": "Retrospect",
-      "release_year": 2000,
-      "total_tracks": 1,
-      "parsed_tracks_count": 1,
-      "track_ids": [
-        "epica_instrospect"
-      ]
-    },
-    {
-      "album_id": "requien_for_the_indifferent",
-      "title": "Requien For The Indifferent",
-      "release_year": 2000,
-      "total_tracks": 1,
-      "parsed_tracks_count": 1,
-      "track_ids": [
+        "epica_requiem_for_the_indifferent",
         "epica_nostalgia"
-      ]
-    },
-    {
-      "album_id": "phanton_agony",
-      "title": "Phanton Agony",
-      "release_year": 2000,
-      "total_tracks": 1,
-      "parsed_tracks_count": 1,
-      "track_ids": [
-        "epica_cry_for_the_moon"
       ]
     }
   ]

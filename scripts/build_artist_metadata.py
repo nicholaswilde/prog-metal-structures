@@ -14,90 +14,12 @@ try:
 except ImportError:
   from models import AlbumMetadata, ArtistMetadata, TrackArchitecture
 
-ARTIST_KNOWLEDGE = {
-  "dream_theater": {
-    "name": "Dream Theater",
-    "country": "United States",
-    "formed_year": 1985,
-    "genres": ["Progressive Metal", "Progressive Rock"],
-    "albums": {
-      "Images and Words": {"release_year": 1992, "total_tracks": 8},
-      "Metropolis Pt. 2: Scenes from a Memory": {"release_year": 1999, "total_tracks": 12},
-    },
-  },
-  "opeth": {
-    "name": "Opeth",
-    "country": "Sweden",
-    "formed_year": 1990,
-    "genres": ["Progressive Death Metal", "Progressive Rock"],
-    "albums": {
-      "Ghost Reveries": {"release_year": 2005, "total_tracks": 8},
-      "Blackwater Park": {"release_year": 2001, "total_tracks": 8},
-    },
-  },
-  "tool": {
-    "name": "Tool",
-    "country": "United States",
-    "formed_year": 1990,
-    "genres": ["Progressive Metal", "Alternative Metal", "Art Rock"],
-    "albums": {
-      "Lateralus": {"release_year": 2001, "total_tracks": 13},
-      "Ænima": {"release_year": 1996, "total_tracks": 15},
-    },
-  },
-  "meshuggah": {
-    "name": "Meshuggah",
-    "country": "Sweden",
-    "formed_year": 1987,
-    "genres": ["Extreme Metal", "Djent", "Progressive Metal", "Polymetric Metal"],
-    "albums": {
-      "Destroy Erase Improve": {"release_year": 1995, "total_tracks": 10},
-      "obZen": {"release_year": 2008, "total_tracks": 9},
-    },
-  },
-  "haken": {
-    "name": "Haken",
-    "country": "United Kingdom",
-    "formed_year": 2007,
-    "genres": ["Progressive Metal", "Progressive Rock"],
-    "albums": {
-      "The Mountain": {"release_year": 2013, "total_tracks": 9},
-      "Affinity": {"release_year": 2016, "total_tracks": 9},
-    },
-  },
-  "animals_as_leaders": {
-    "name": "Animals as Leaders",
-    "country": "United States",
-    "formed_year": 2007,
-    "genres": ["Progressive Metal", "Djent", "Instrumental Rock"],
-    "albums": {
-      "Weightless": {"release_year": 2011, "total_tracks": 12},
-      "The Joy of Motion": {"release_year": 2014, "total_tracks": 12},
-    },
-  },
-  "between_the_buried_and_me": {
-    "name": "Between the Buried and Me",
-    "country": "United States",
-    "formed_year": 2000,
-    "genres": ["Progressive Metal", "Technical Death Metal", "Mathcore"],
-    "albums": {
-      "Alaska": {"release_year": 2005, "total_tracks": 11},
-      "Colors": {"release_year": 2007, "total_tracks": 8},
-    },
-  },
-  "epica": {
-    "name": "Epica",
-    "country": "Netherlands",
-    "formed_year": 2002,
-    "genres": ["Symphonic Metal", "Progressive Metal", "Gothic Metal"],
-    "albums": {
-      "The Phantom Agony": {"release_year": 2003, "total_tracks": 9},
-      "Consign to Oblivion": {"release_year": 2005, "total_tracks": 11},
-      "Design Your Universe": {"release_year": 2009, "total_tracks": 13},
-      "Requiem for the Indifferent": {"release_year": 2012, "total_tracks": 13},
-    },
-  },
-}
+try:
+  from scripts.discography import DISCOGRAPHY
+except ImportError:
+  from discography import DISCOGRAPHY
+
+ARTIST_KNOWLEDGE = DISCOGRAPHY
 
 
 def build_artist_metadata(processed_dir: Path, output_dir: Path) -> List[Path]:

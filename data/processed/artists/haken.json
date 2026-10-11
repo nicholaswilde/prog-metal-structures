@@ -10,10 +10,10 @@
   "total_parsed_tracks": 1,
   "albums": [
     {
-      "album_id": "the_mountain_(2013)",
-      "title": "The Mountain (2013)",
-      "release_year": 2000,
-      "total_tracks": 1,
+      "album_id": "the_mountain",
+      "title": "The Mountain",
+      "release_year": 2013,
+      "total_tracks": 9,
       "parsed_tracks_count": 1,
       "track_ids": [
         "haken_atlas_stone"

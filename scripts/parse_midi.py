@@ -15,6 +15,11 @@ except ImportError:
   meter = None
   tempo = None
 
+try:
+  from scripts.discography import lookup_track_metadata
+except ImportError:
+  from discography import lookup_track_metadata
+
 
 def slugify(text: str) -> str:
   """Convert string to filesystem and identifier safe slug."""
@@ -30,14 +35,25 @@ def parse_midi_file(file_path: Path) -> Dict[str, Any]:
   score = converter.parse(str(file_path))
 
   title = file_path.stem
+  artist = "Unknown Artist"
   if hasattr(score, "metadata") and score.metadata:
     if score.metadata.title:
       title = score.metadata.title
-    artist = score.metadata.composer or "Unknown Artist"
-  else:
-    artist = "Unknown Artist"
+    if score.metadata.composer:
+      artist = score.metadata.composer
 
-  track_id = f"{slugify(artist)}_{slugify(title)}"
+  if not artist or artist.lower() in {"unknown", "unknown artist"}:
+    stem = file_path.stem
+    if "-" in stem:
+      parts = stem.split("-", 1)
+      artist = parts[0].replace("_", " ").title()
+      title = parts[1].replace("_", " ").title()
+
+  artist_key = slugify(artist)
+  canonical_album, canonical_year = lookup_track_metadata(artist_key, title)
+  album = canonical_album or ""
+  year = canonical_year
+  track_id = f"{artist_key}_{slugify(title)}"
 
   # Ensure measures are partitioned
   primary_stream = (
@@ -139,7 +155,8 @@ def parse_midi_file(file_path: Path) -> Dict[str, Any]:
     "track_id": track_id,
     "title": title,
     "artist": artist,
-    "album": "",
+    "album": album,
+    "year": year,
     "source_file": file_path.name,
     "source_format": file_path.suffix.lstrip(".").lower(),
     "total_measures": total_measures,

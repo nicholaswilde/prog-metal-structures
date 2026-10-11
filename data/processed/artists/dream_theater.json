@@ -12,8 +12,8 @@
     {
       "album_id": "train_of_thought",
       "title": "Train of Thought",
-      "release_year": 2000,
-      "total_tracks": 2,
+      "release_year": 2003,
+      "total_tracks": 7,
       "parsed_tracks_count": 2,
       "track_ids": [
         "dream_theater_in_the_name_of_god",
@@ -23,62 +23,62 @@
     {
       "album_id": "awake",
       "title": "Awake",
-      "release_year": 2000,
-      "total_tracks": 1,
+      "release_year": 1994,
+      "total_tracks": 11,
       "parsed_tracks_count": 1,
       "track_ids": [
         "dream_theater_erotomania_2"
       ]
     },
     {
-      "album_id": "single_/_tab_transcription",
-      "title": "Single / Tab Transcription",
-      "release_year": 2000,
+      "album_id": "a_change_of_seasons",
+      "title": "A Change of Seasons",
+      "release_year": 1995,
       "total_tracks": 5,
-      "parsed_tracks_count": 5,
+      "parsed_tracks_count": 1,
       "track_ids": [
-        "dream_theater_a_change_of_seasons",
+        "dream_theater_a_change_of_seasons"
+      ]
+    },
+    {
+      "album_id": "metropolis_pt._2:_scenes_from_a_memory",
+      "title": "Metropolis Pt. 2: Scenes from a Memory",
+      "release_year": 1999,
+      "total_tracks": 12,
+      "parsed_tracks_count": 4,
+      "track_ids": [
         "dream_theater_dance_of_eternity",
+        "dream_theater_beyond_this_life",
         "dream_theater_fatal_tragedy_2",
+        "dream_theater_scenes_from_a_memory"
+      ]
+    },
+    {
+      "album_id": "images_and_words",
+      "title": "Images and Words",
+      "release_year": 1992,
+      "total_tracks": 8,
+      "parsed_tracks_count": 2,
+      "track_ids": [
         "dream_theater_metropolis_part_1_the_miracle_and_the_sleeper",
         "dream_theater_pull_me_under_2"
       ]
     },
     {
-      "album_id": "metropolis_pt.2:_scenes_from_a_memory",
-      "title": "Metropolis PT.2: Scenes From A Memory",
-      "release_year": 2000,
-      "total_tracks": 1,
-      "parsed_tracks_count": 1,
-      "track_ids": [
-        "dream_theater_beyond_this_life"
-      ]
-    },
-    {
       "album_id": "octavarium",
       "title": "Octavarium",
-      "release_year": 2000,
-      "total_tracks": 1,
+      "release_year": 2005,
+      "total_tracks": 8,
       "parsed_tracks_count": 1,
       "track_ids": [
         "dream_theater_panic_attack"
       ]
     },
     {
-      "album_id": "scenes_from_a_memory",
-      "title": "Scenes From A Memory",
-      "release_year": 2000,
-      "total_tracks": 1,
-      "parsed_tracks_count": 1,
-      "track_ids": [
-        "dream_theater_scenes_from_a_memory"
-      ]
-    },
-    {
       "album_id": "systematic_chaos",
       "title": "Systematic Chaos",
-      "release_year": 2000,
-      "total_tracks": 1,
+      "release_year": 2007,
+      "total_tracks": 8,
       "parsed_tracks_count": 1,
       "track_ids": [
         "dream_theater_constant_motion"

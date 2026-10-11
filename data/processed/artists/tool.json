@@ -8,25 +8,19 @@
     "Alternative Metal",
     "Art Rock"
   ],
-  "total_parsed_tracks": 2,
+  "total_parsed_tracks": 5,
   "albums": [
     {
       "album_id": "lateralus",
       "title": "Lateralus",
       "release_year": 2001,
       "total_tracks": 13,
-      "parsed_tracks_count": 1,
+      "parsed_tracks_count": 5,
       "track_ids": [
-        "tool_schism"
-      ]
-    },
-    {
-      "album_id": "single_/_tab_transcription",
-      "title": "Single / Tab Transcription",
-      "release_year": 2000,
-      "total_tracks": 1,
-      "parsed_tracks_count": 1,
-      "track_ids": [
+        "tool_ticks_and_leeches",
+        "tool_schism",
+        "tool_parabol",
+        "tool_the_grudge",
         "tool_lateralus"
       ]
     }

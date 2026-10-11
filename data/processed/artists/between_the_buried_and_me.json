@@ -11,10 +11,10 @@
   "total_parsed_tracks": 1,
   "albums": [
     {
-      "album_id": "single_/_tab_transcription",
-      "title": "Single / Tab Transcription",
-      "release_year": 2000,
-      "total_tracks": 1,
+      "album_id": "alaska",
+      "title": "Alaska",
+      "release_year": 2005,
+      "total_tracks": 11,
       "parsed_tracks_count": 1,
       "track_ids": [
         "between_the_buried_and_me_alaska"

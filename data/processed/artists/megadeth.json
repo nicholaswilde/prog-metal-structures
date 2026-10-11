@@ -1,0 +1,23 @@
+{
+  "artist_id": "megadeth",
+  "name": "Megadeth",
+  "country": "United States",
+  "formed_year": 1983,
+  "genres": [
+    "Thrash Metal",
+    "Speed Metal"
+  ],
+  "total_parsed_tracks": 1,
+  "albums": [
+    {
+      "album_id": "the_beavis_and_butt-head_experience",
+      "title": "The Beavis and Butt-Head Experience",
+      "release_year": 1993,
+      "total_tracks": 12,
+      "parsed_tracks_count": 1,
+      "track_ids": [
+        "megadeth_99_ways_to_die"
+      ]
+    }
+  ]
+}

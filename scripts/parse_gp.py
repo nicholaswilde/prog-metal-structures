@@ -12,6 +12,11 @@ try:
 except ImportError:
   guitarpro = None
 
+try:
+  from scripts.discography import lookup_track_metadata
+except ImportError:
+  from discography import lookup_track_metadata
+
 
 def slugify(text: str) -> str:
   """Convert string to filesystem and identifier safe slug."""
@@ -54,8 +59,11 @@ def parse_gp_file(file_path: Path) -> Dict[str, Any]:
 
   title = raw_title or file_path.stem.replace("_", " ").title()
   artist = raw_artist
-  album = song.album.strip() if getattr(song, "album", None) else ""
-  track_id = f"{slugify(artist)}_{slugify(title)}"
+  artist_key = slugify(artist)
+  canonical_album, canonical_year = lookup_track_metadata(artist_key, title)
+  album = canonical_album or (song.album.strip() if getattr(song, "album", None) else "")
+  year = canonical_year
+  track_id = f"{artist_key}_{slugify(title)}"
 
   measures_data: List[Dict[str, Any]] = []
   sections: List[Dict[str, Any]] = []
@@ -106,6 +114,7 @@ def parse_gp_file(file_path: Path) -> Dict[str, Any]:
     "title": title,
     "artist": artist,
     "album": album,
+    "year": year,
     "source_file": file_path.name,
     "source_format": file_path.suffix.lstrip(".").lower(),
     "total_measures": total_measures,
