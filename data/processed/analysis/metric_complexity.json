@@ -263,6 +263,51 @@
     }
   },
   {
+    "track_id": "opeth_harvest",
+    "title": "Harvest",
+    "artist": "Opeth",
+    "total_measures": 134,
+    "unique_meters": 7,
+    "shift_frequency": 0.2932,
+    "metric_entropy": 0.9284,
+    "meter_distribution": {
+      "3/32": 0.0075,
+      "4/4": 0.8433,
+      "8/16": 0.0896,
+      "2/4": 0.0224,
+      "12/32": 0.0075,
+      "3/4": 0.0149,
+      "6/4": 0.0149
+    },
+    "transition_matrix": {
+      "3/32": {
+        "4/4": 1.0
+      },
+      "4/4": {
+        "8/16": 0.1071,
+        "2/4": 0.0268,
+        "4/4": 0.8393,
+        "12/32": 0.0089,
+        "3/4": 0.0179
+      },
+      "8/16": {
+        "4/4": 1.0
+      },
+      "2/4": {
+        "4/4": 1.0
+      },
+      "12/32": {
+        "4/4": 1.0
+      },
+      "3/4": {
+        "6/4": 1.0
+      },
+      "6/4": {
+        "4/4": 1.0
+      }
+    }
+  },
+  {
     "track_id": "opeth_bleak",
     "title": "Bleak",
     "artist": "Opeth",
@@ -449,6 +494,38 @@
       },
       "9/8": {
         "3/4": 1.0
+      }
+    }
+  },
+  {
+    "track_id": "opeth_porcelain_heart",
+    "title": "Porcelain Heart",
+    "artist": "Opeth",
+    "total_measures": 274,
+    "unique_meters": 4,
+    "shift_frequency": 0.022,
+    "metric_entropy": 0.7793,
+    "meter_distribution": {
+      "4/4": 0.8066,
+      "2/4": 0.0073,
+      "6/8": 0.1825,
+      "5/4": 0.0036
+    },
+    "transition_matrix": {
+      "4/4": {
+        "4/4": 0.9909,
+        "2/4": 0.0091
+      },
+      "2/4": {
+        "4/4": 0.5,
+        "6/8": 0.5
+      },
+      "6/8": {
+        "6/8": 0.98,
+        "5/4": 0.02
+      },
+      "5/4": {
+        "4/4": 1.0
       }
     }
   },
@@ -646,6 +723,33 @@
       },
       "8/4": {
         "4/4": 1.0
+      }
+    }
+  },
+  {
+    "track_id": "opeth_the_moor",
+    "title": "The Moor",
+    "artist": "Opeth",
+    "total_measures": 329,
+    "unique_meters": 3,
+    "shift_frequency": 0.0091,
+    "metric_entropy": 0.5802,
+    "meter_distribution": {
+      "4/4": 0.1277,
+      "6/4": 0.8693,
+      "6/8": 0.003
+    },
+    "transition_matrix": {
+      "4/4": {
+        "4/4": 0.9762,
+        "6/4": 0.0238
+      },
+      "6/4": {
+        "6/4": 0.9965,
+        "6/8": 0.0035
+      },
+      "6/8": {
+        "6/4": 1.0
       }
     }
   },
@@ -1215,6 +1319,27 @@
     }
   },
   {
+    "track_id": "opeth_the_lotus_eater",
+    "title": "The Lotus Eater",
+    "artist": "Opeth",
+    "total_measures": 31,
+    "unique_meters": 2,
+    "shift_frequency": 0.0333,
+    "metric_entropy": 0.2056,
+    "meter_distribution": {
+      "2/4": 0.0323,
+      "4/4": 0.9677
+    },
+    "transition_matrix": {
+      "2/4": {
+        "4/4": 1.0
+      },
+      "4/4": {
+        "4/4": 1.0
+      }
+    }
+  },
+  {
     "track_id": "opeth_ghost_of_perdition",
     "title": "Ghost of Perdition",
     "artist": "Opeth",
@@ -1562,6 +1687,23 @@
       "12/8": {
         "12/8": 0.9474,
         "6/8": 0.0526
+      }
+    }
+  },
+  {
+    "track_id": "opeth_burden",
+    "title": "Burden",
+    "artist": "Opeth",
+    "total_measures": 212,
+    "unique_meters": 1,
+    "shift_frequency": 0.0,
+    "metric_entropy": 0.0,
+    "meter_distribution": {
+      "4/4": 1.0
+    },
+    "transition_matrix": {
+      "4/4": {
+        "4/4": 1.0
       }
     }
   },
