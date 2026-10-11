@@ -155,4 +155,16 @@ tasks:
     cmds:
       - uv run python scripts/export_ai.py {{.CLI_ARGS}}
 
+  # Dataset Completeness & Gap Auditing
+  gaps:
+    desc: Audit dataset completeness and display album coverage gaps
+    cmds:
+      - uv run python scripts/audit_gaps.py {{.CLI_ARGS}}
+
+  gaps:update:
+    desc: Audit dataset completeness and update documentation ledger (docs/dataset_gaps.md)
+    cmds:
+      - uv run python scripts/audit_gaps.py --update-docs {{.CLI_ARGS}}
+
+
 
