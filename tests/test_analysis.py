@@ -50,7 +50,7 @@ def test_analyze_track():
       {"measure_number": 2, "time_signature": "7/8", "tempo_bpm": 120.0},
       {"measure_number": 3, "time_signature": "7/8", "tempo_bpm": 120.0},
       {"measure_number": 4, "time_signature": "5/8", "tempo_bpm": 120.0},
-    ]
+    ],
   }
   result = analyze_track(track_dict)
   assert result["track_id"] == "test_track"

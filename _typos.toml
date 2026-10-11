@@ -1,0 +1,61 @@
+[files]
+extend-exclude = [
+  ".git/",
+  ".venv/",
+  ".pytest_cache/",
+  ".ruff_cache/",
+  ".codegraph/",
+  ".serena/cache/",
+  "data/raw/**",
+  "uv.lock",
+  "*.parquet",
+  "*.db",
+  "*.gp3",
+  "*.gp4",
+  "*.gp5",
+  "*.mid",
+  "*.midi",
+  "htmlcov/",
+]
+
+[default.extend-words]
+# Music theory & domain terms
+"bpm" = "bpm"
+"BPM" = "BPM"
+"polymetric" = "polymetric"
+"polymeter" = "polymeter"
+"hemiola" = "hemiola"
+"microtonal" = "microtonal"
+"Markovian" = "Markovian"
+
+# Band names & tab misspellings
+"theather" = "theather"
+"Opeth" = "Opeth"
+"Meshuggah" = "Meshuggah"
+"Haken" = "Haken"
+"Epica" = "Epica"
+"BTBAM" = "BTBAM"
+
+# Libraries, formats & tools
+"catppuccin" = "catppuccin"
+"Catppuccin" = "Catppuccin"
+"codegraph" = "codegraph"
+"CodeGraph" = "CodeGraph"
+"duckdb" = "duckdb"
+"DuckDB" = "DuckDB"
+"gprotab" = "gprotab"
+"music21" = "music21"
+"parquet" = "parquet"
+"Parquet" = "Parquet"
+"pydantic" = "pydantic"
+"Pydantic" = "Pydantic"
+"pyguitarpro" = "pyguitarpro"
+"pytest" = "pytest"
+"Pytest" = "Pytest"
+"respx" = "respx"
+"serena" = "serena"
+"Serena" = "Serena"
+"tegridy" = "tegridy"
+"Tegridy" = "Tegridy"
+"zensical" = "zensical"
+"Zensical" = "Zensical"

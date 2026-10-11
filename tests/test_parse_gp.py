@@ -1,7 +1,6 @@
 """Tests for Guitar Pro parser."""
 
 from pathlib import Path
-import pytest
 from scripts.parse_gp import parse_gp_file, slugify
 
 

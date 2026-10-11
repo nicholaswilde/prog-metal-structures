@@ -11,7 +11,6 @@ Adheres strictly to project guidelines:
 import argparse
 import re
 import shutil
-import sys
 import time
 from pathlib import Path
 from typing import Dict, List, Optional
@@ -23,11 +22,6 @@ try:
 except ImportError:
   httpx = None
   BeautifulSoup = None
-
-try:
-  from scripts.models import TrackArchitecture
-except ImportError:
-  from models import TrackArchitecture
 
 
 def slugify(text: str) -> str:
@@ -56,7 +50,7 @@ class MidiScraper:
           "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
           "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
         )
-      }
+      },
     )
 
   def search_local_dataset(self, query: str) -> List[Path]:
@@ -67,7 +61,6 @@ class MidiScraper:
 
     print(f"[*] Checking local dataset first: {self.LOCAL_TEGRIDY_DATASET}")
     matches: List[Path] = []
-    pattern = f"*{query}*"
 
     for p in self.LOCAL_TEGRIDY_DATASET.rglob("*"):
       if p.suffix.lower() in {".mid", ".midi"}:
@@ -100,10 +93,7 @@ class MidiScraper:
         text = a.text.strip()
         href = a.get("href", "")
         if artist_or_song.lower() in text.lower() or artist_or_song.lower() in href.lower():
-          results.append({
-            "title": text,
-            "url": urljoin(self.METAL_MIDI_ARCHIVE, href)
-          })
+          results.append({"title": text, "url": urljoin(self.METAL_MIDI_ARCHIVE, href)})
     except Exception as exc:
       print(f"[!] Error querying metal-midi archive: {exc}")
     return results
@@ -139,7 +129,7 @@ class MidiScraper:
       return self.copy_local_matches(local_matches[:limit])
 
     # 2. Online archive fallback
-    print(f"[*] No local files found. Falling back to online archives...")
+    print("[*] No local files found. Falling back to online archives...")
     metal_results = self.search_metal_midi_archive(query)
     downloaded: List[Path] = []
     for item in metal_results:
@@ -154,25 +144,17 @@ class MidiScraper:
 
 
 def main() -> None:
-  parser = argparse.ArgumentParser(description="Search and scrape MIDI files prioritizing local repo")
-  parser.add_argument(
-    "--query",
-    type=str,
-    required=True,
-    help="Search term (artist or song title)"
+  parser = argparse.ArgumentParser(
+    description="Search and scrape MIDI files prioritizing local repo"
   )
+  parser.add_argument("--query", type=str, required=True, help="Search term (artist or song title)")
   parser.add_argument(
     "--output-dir",
     type=Path,
     default=Path("data/raw/midi"),
-    help="Directory to store retrieved MIDI files"
+    help="Directory to store retrieved MIDI files",
   )
-  parser.add_argument(
-    "--limit",
-    type=int,
-    default=3,
-    help="Maximum files to retrieve"
-  )
+  parser.add_argument("--limit", type=int, default=3, help="Maximum files to retrieve")
   args = parser.parse_args()
 
   scraper = MidiScraper(output_dir=args.output_dir)

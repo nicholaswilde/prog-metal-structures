@@ -22,8 +22,8 @@ ARTIST_KNOWLEDGE = {
     "genres": ["Progressive Metal", "Progressive Rock"],
     "albums": {
       "Images and Words": {"release_year": 1992, "total_tracks": 8},
-      "Metropolis Pt. 2: Scenes from a Memory": {"release_year": 1999, "total_tracks": 12}
-    }
+      "Metropolis Pt. 2: Scenes from a Memory": {"release_year": 1999, "total_tracks": 12},
+    },
   },
   "opeth": {
     "name": "Opeth",
@@ -32,8 +32,8 @@ ARTIST_KNOWLEDGE = {
     "genres": ["Progressive Death Metal", "Progressive Rock"],
     "albums": {
       "Ghost Reveries": {"release_year": 2005, "total_tracks": 8},
-      "Blackwater Park": {"release_year": 2001, "total_tracks": 8}
-    }
+      "Blackwater Park": {"release_year": 2001, "total_tracks": 8},
+    },
   },
   "tool": {
     "name": "Tool",
@@ -42,8 +42,8 @@ ARTIST_KNOWLEDGE = {
     "genres": ["Progressive Metal", "Alternative Metal", "Art Rock"],
     "albums": {
       "Lateralus": {"release_year": 2001, "total_tracks": 13},
-      "Ænima": {"release_year": 1996, "total_tracks": 15}
-    }
+      "Ænima": {"release_year": 1996, "total_tracks": 15},
+    },
   },
   "meshuggah": {
     "name": "Meshuggah",
@@ -52,8 +52,8 @@ ARTIST_KNOWLEDGE = {
     "genres": ["Extreme Metal", "Djent", "Progressive Metal", "Polymetric Metal"],
     "albums": {
       "Destroy Erase Improve": {"release_year": 1995, "total_tracks": 10},
-      "obZen": {"release_year": 2008, "total_tracks": 9}
-    }
+      "obZen": {"release_year": 2008, "total_tracks": 9},
+    },
   },
   "haken": {
     "name": "Haken",
@@ -62,8 +62,8 @@ ARTIST_KNOWLEDGE = {
     "genres": ["Progressive Metal", "Progressive Rock"],
     "albums": {
       "The Mountain": {"release_year": 2013, "total_tracks": 9},
-      "Affinity": {"release_year": 2016, "total_tracks": 9}
-    }
+      "Affinity": {"release_year": 2016, "total_tracks": 9},
+    },
   },
   "animals_as_leaders": {
     "name": "Animals as Leaders",
@@ -72,8 +72,8 @@ ARTIST_KNOWLEDGE = {
     "genres": ["Progressive Metal", "Djent", "Instrumental Rock"],
     "albums": {
       "Weightless": {"release_year": 2011, "total_tracks": 12},
-      "The Joy of Motion": {"release_year": 2014, "total_tracks": 12}
-    }
+      "The Joy of Motion": {"release_year": 2014, "total_tracks": 12},
+    },
   },
   "between_the_buried_and_me": {
     "name": "Between the Buried and Me",
@@ -82,8 +82,8 @@ ARTIST_KNOWLEDGE = {
     "genres": ["Progressive Metal", "Technical Death Metal", "Mathcore"],
     "albums": {
       "Alaska": {"release_year": 2005, "total_tracks": 11},
-      "Colors": {"release_year": 2007, "total_tracks": 8}
-    }
+      "Colors": {"release_year": 2007, "total_tracks": 8},
+    },
   },
   "epica": {
     "name": "Epica",
@@ -94,9 +94,9 @@ ARTIST_KNOWLEDGE = {
       "The Phantom Agony": {"release_year": 2003, "total_tracks": 9},
       "Consign to Oblivion": {"release_year": 2005, "total_tracks": 11},
       "Design Your Universe": {"release_year": 2009, "total_tracks": 13},
-      "Requiem for the Indifferent": {"release_year": 2012, "total_tracks": 13}
-    }
-  }
+      "Requiem for the Indifferent": {"release_year": 2012, "total_tracks": 13},
+    },
+  },
 }
 
 
@@ -133,13 +133,16 @@ def build_artist_metadata(processed_dir: Path, output_dir: Path) -> List[Path]:
   created_files: List[Path] = []
 
   for artist_key, tracks in tracks_by_artist.items():
-    info = ARTIST_KNOWLEDGE.get(artist_key, {
-      "name": tracks[0].artist,
-      "country": "Unknown",
-      "formed_year": 1990,
-      "genres": ["Progressive Metal"],
-      "albums": {}
-    })
+    info = ARTIST_KNOWLEDGE.get(
+      artist_key,
+      {
+        "name": tracks[0].artist,
+        "country": "Unknown",
+        "formed_year": 1990,
+        "genres": ["Progressive Metal"],
+        "albums": {},
+      },
+    )
 
     albums_map: Dict[str, List[str]] = {}
     for t in tracks:
@@ -156,7 +159,7 @@ def build_artist_metadata(processed_dir: Path, output_dir: Path) -> List[Path]:
           release_year=known_alb.get("release_year", 2000),
           total_tracks=known_alb.get("total_tracks", len(track_ids)),
           parsed_tracks_count=len(track_ids),
-          track_ids=track_ids
+          track_ids=track_ids,
         )
       )
 
@@ -167,7 +170,7 @@ def build_artist_metadata(processed_dir: Path, output_dir: Path) -> List[Path]:
       formed_year=info["formed_year"],
       genres=info["genres"],
       total_parsed_tracks=len(tracks),
-      albums=album_models
+      albums=album_models,
     )
 
     out_file = output_dir / f"{artist_key}.json"
@@ -184,13 +187,13 @@ def main() -> None:
     "--processed-dir",
     type=Path,
     default=Path("data/processed"),
-    help="Directory containing parsed track architectures"
+    help="Directory containing parsed track architectures",
   )
   parser.add_argument(
     "--output-dir",
     type=Path,
     default=Path("data/processed/artists"),
-    help="Directory to save artist metadata files"
+    help="Directory to save artist metadata files",
   )
   args = parser.parse_args()
 

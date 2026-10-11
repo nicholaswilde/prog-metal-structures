@@ -67,7 +67,9 @@ Serena MCP provides Language Server Protocol (LSP) backed semantic coding tools,
 
 ## Testing & TDD Guidelines
 - **Test-Driven Development (TDD)**: Follow the TDD workflow: write failing tests first to define expectations or reproduce bugs, implement minimal code to make them pass, and verify test passes before completing work.
-- **Test Directory**: Store all test suites in the `tests/` directory (e.g. `tests/test_*.py`). Execute tests via `uv run pytest`.
+- **Test Directory**: Store all test suites in the `tests/` directory (e.g. `tests/test_*.py`). Execute tests via `task test` or `task test:coverage`.
+- **Pre-Commit Verification**: Run `task check` before committing to verify linting, formatting, spellcheck, test coverage, and schema validation.
+- **Spellchecking**: Run `task spellcheck-file FILE=path/to/file` for targeted file validation or `task spellcheck` for full repository sweep.
 
 ## Python & Package Management Guidelines
 - **Runner**: Always use `uv` to execute Python scripts (e.g. `uv run python scripts/<script>.py`).
@@ -75,6 +77,7 @@ Serena MCP provides Language Server Protocol (LSP) backed semantic coding tools,
 
 ## Task Automation (Taskfile.yml) Guidelines
 - **Sync New Functionality**: Keep `Taskfile.yml` up to date. Whenever adding new scripts, workflows, or CLI capabilities to the repo, add corresponding task definitions to `Taskfile.yml` with clear descriptions and parameter forwarding (`{{.CLI_ARGS}}`).
+- **Core Pipeline Commands**: `task check`, `task lint`, `task format:check`, `task test:coverage`, `task spellcheck-file FILE=<path>`.
 
 ## MIDI Search Guidelines
 - **Local Dataset First**: When searching for MIDI files, always search the local repository `/home/nicholas/git/asigalov61/Tegridy-MIDI-Dataset` first before searching online.

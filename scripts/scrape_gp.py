@@ -7,7 +7,6 @@ Adheres to 2-space indentation.
 
 import argparse
 import re
-import sys
 import time
 from pathlib import Path
 from typing import Dict, List, Optional
@@ -19,11 +18,6 @@ try:
 except ImportError:
   httpx = None
   BeautifulSoup = None
-
-try:
-  from scripts.models import TrackArchitecture
-except ImportError:
-  from models import TrackArchitecture
 
 
 def slugify(text: str) -> str:
@@ -50,7 +44,7 @@ class GuitarProScraper:
           "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
           "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
         )
-      }
+      },
     )
 
   def find_artist_slug(self, artist_name: str) -> Optional[str]:
@@ -89,10 +83,7 @@ class GuitarProScraper:
         href = a.get("href", "")
         if f"/en/tabs/{artist_slug}/" in href:
           title = a.text.strip()
-          tabs.append({
-            "title": title,
-            "url": urljoin(self.BASE_URL, href)
-          })
+          tabs.append({"title": title, "url": urljoin(self.BASE_URL, href)})
     except Exception as exc:
       print(f"[!] Error listing tabs for {artist_slug}: {exc}")
     return tabs
@@ -125,10 +116,7 @@ class GuitarProScraper:
       return None
 
   def scrape_artist_tracks(
-    self,
-    artist_name: str,
-    track_filter: Optional[str] = None,
-    max_tracks: int = 5
+    self, artist_name: str, track_filter: Optional[str] = None, max_tracks: int = 5
   ) -> List[Path]:
     """Search and download tabs for target artist with optional title filter."""
     print(f"[*] Locating Guitar Pro tabs for: {artist_name}")
@@ -165,33 +153,23 @@ def main() -> None:
     "--artist",
     type=str,
     default="Dream Theater",
-    help="Artist or band name (e.g. 'Dream Theater', 'Opeth')"
+    help="Artist or band name (e.g. 'Dream Theater', 'Opeth')",
   )
   parser.add_argument(
-    "--track",
-    type=str,
-    default=None,
-    help="Filter by track title (e.g. 'Dance of Eternity')"
+    "--track", type=str, default=None, help="Filter by track title (e.g. 'Dance of Eternity')"
   )
   parser.add_argument(
     "--output-dir",
     type=Path,
     default=Path("data/raw/guitar_pro"),
-    help="Directory to store downloaded Guitar Pro files"
+    help="Directory to store downloaded Guitar Pro files",
   )
-  parser.add_argument(
-    "--limit",
-    type=int,
-    default=3,
-    help="Maximum tabs to download"
-  )
+  parser.add_argument("--limit", type=int, default=3, help="Maximum tabs to download")
   args = parser.parse_args()
 
   scraper = GuitarProScraper(output_dir=args.output_dir)
   results = scraper.scrape_artist_tracks(
-    artist_name=args.artist,
-    track_filter=args.track,
-    max_tracks=args.limit
+    artist_name=args.artist, track_filter=args.track, max_tracks=args.limit
   )
   print(f"[*] Complete. Downloaded {len(results)} Guitar Pro files into {args.output_dir}")
 

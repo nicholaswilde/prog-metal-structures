@@ -72,12 +72,12 @@ class IngestionTUI:
       prev_meter = ts
 
     return TrackStats(
-      total_measures=len(measures),
-      time_sig_changes=changes,
-      distinct_meters=distinct_meters
+      total_measures=len(measures), time_sig_changes=changes, distinct_meters=distinct_meters
     )
 
-  def display_track_panel(self, source_path: Path, track_data: Dict[str, Any], output_path: Path) -> None:
+  def display_track_panel(
+    self, source_path: Path, track_data: Dict[str, Any], output_path: Path
+  ) -> None:
     """Render a Catppuccin Mocha card for an ingested track."""
     stats = self.compute_stats(track_data)
 
@@ -90,7 +90,7 @@ class IngestionTUI:
     content.append("Parsed: ", style=f"bold {MOCHA_BLUE}")
     content.append(
       f"{stats.time_sig_changes} time signature changes across {stats.total_measures} measures\n",
-      style=MOCHA_TEXT
+      style=MOCHA_TEXT,
     )
 
     content.append("Detected meters: ", style=f"bold {MOCHA_TEAL}")
@@ -103,7 +103,7 @@ class IngestionTUI:
       content,
       title=f"[{MOCHA_PEACH}]Catppuccin Mocha Pipeline TUI[/{MOCHA_PEACH}]",
       border_style=MOCHA_SURFACE0,
-      padding=(1, 2)
+      padding=(1, 2),
     )
     self.console.print(panel)
 
@@ -111,10 +111,11 @@ class IngestionTUI:
 def run_pipeline(
   raw_gp_dir: Path = Path("data/raw/guitar_pro"),
   raw_midi_dir: Path = Path("data/raw/midi"),
-  output_dir: Path = Path("data/processed")
+  output_dir: Path = Path("data/processed"),
 ) -> None:
   """Run ingestion on all raw files and display rich Catppuccin Mocha panels."""
   import json
+
   output_dir.mkdir(parents=True, exist_ok=True)
   tui = IngestionTUI()
 
@@ -138,7 +139,9 @@ def run_pipeline(
         out_file.write_text(json.dumps(data, indent=2), encoding="utf-8")
         tui.display_track_panel(midi_file, data, out_file)
       except Exception as exc:
-        tui.console.print(f"[{MOCHA_PEACH}][!] Error parsing {midi_file.name}: {exc}[/{MOCHA_PEACH}]")
+        tui.console.print(
+          f"[{MOCHA_PEACH}][!] Error parsing {midi_file.name}: {exc}[/{MOCHA_PEACH}]"
+        )
 
 
 def main() -> None:

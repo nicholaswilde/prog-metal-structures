@@ -10,7 +10,7 @@ import collections
 import json
 import random
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Dict, List, Optional
 
 try:
   from scripts.models import Measure, TrackArchitecture
@@ -23,7 +23,9 @@ class MeterSequenceGenerator:
 
   def __init__(self, order: int = 1, seed: Optional[int] = None):
     self.order = max(1, order)
-    self.transitions: Dict[str, Dict[str, int]] = collections.defaultdict(lambda: collections.defaultdict(int))
+    self.transitions: Dict[str, Dict[str, int]] = collections.defaultdict(
+      lambda: collections.defaultdict(int)
+    )
     self.start_meters: List[str] = []
     if seed is not None:
       random.seed(seed)
@@ -83,20 +85,14 @@ class MeterSequenceGenerator:
     artist: str = "Algorithmic Ingestion Model",
     length: int = 32,
     default_tempo: float = 120.0,
-    seed_meter: Optional[str] = None
+    seed_meter: Optional[str] = None,
   ) -> TrackArchitecture:
     """Generate a complete TrackArchitecture model instance."""
     progression = self.generate(length=length, seed_meter=seed_meter)
     measures: List[Measure] = []
 
     for idx, ts in enumerate(progression, start=1):
-      measures.append(
-        Measure(
-          measure_number=idx,
-          time_signature=ts,
-          tempo_bpm=default_tempo
-        )
-      )
+      measures.append(Measure(measure_number=idx, time_signature=ts, tempo_bpm=default_tempo))
 
     slug_artist = artist.lower().replace(" ", "_")
     slug_title = title.lower().replace(" ", "_")
@@ -110,47 +106,31 @@ class MeterSequenceGenerator:
       total_measures=length,
       default_tempo_bpm=default_tempo,
       default_time_signature=progression[0] if progression else "4/4",
-      measures=measures
+      measures=measures,
     )
 
 
 def main() -> None:
-  parser = argparse.ArgumentParser(description="Generate novel progressive metal meter progressions")
+  parser = argparse.ArgumentParser(
+    description="Generate novel progressive metal meter progressions"
+  )
   parser.add_argument(
     "--corpus-dir",
     type=Path,
     default=Path("data/processed"),
-    help="Directory with processed track JSON datasets"
+    help="Directory with processed track JSON datasets",
   )
+  parser.add_argument("--length", type=int, default=32, help="Number of measures to generate")
+  parser.add_argument("--tempo", type=float, default=128.0, help="Default BPM tempo")
+  parser.add_argument("--seed-meter", type=str, default="7/8", help="Initial time signature")
   parser.add_argument(
-    "--length",
-    type=int,
-    default=32,
-    help="Number of measures to generate"
-  )
-  parser.add_argument(
-    "--tempo",
-    type=float,
-    default=128.0,
-    help="Default BPM tempo"
-  )
-  parser.add_argument(
-    "--seed-meter",
-    type=str,
-    default="7/8",
-    help="Initial time signature"
-  )
-  parser.add_argument(
-    "--title",
-    type=str,
-    default="Synthesized Polymeter",
-    help="Generated track title"
+    "--title", type=str, default="Synthesized Polymeter", help="Generated track title"
   )
   parser.add_argument(
     "--output-file",
     type=Path,
     default=None,
-    help="Optional path to save generated JSON architecture"
+    help="Optional path to save generated JSON architecture",
   )
   args = parser.parse_args()
 
@@ -163,7 +143,7 @@ def main() -> None:
     artist="Prog Generator",
     length=args.length,
     default_tempo=args.tempo,
-    seed_meter=args.seed_meter
+    seed_meter=args.seed_meter,
   )
 
   print(f"\n[+] Generated: {track.title} ({track.total_measures} measures)")

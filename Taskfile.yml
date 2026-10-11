@@ -1,5 +1,8 @@
 version: '3'
 
+vars:
+  PYTHON_FILES: scripts tests
+
 tasks:
   default:
     desc: List available tasks
@@ -11,11 +14,79 @@ tasks:
     cmds:
       - uv sync
 
+  sync:
+    desc: Sync dependencies using uv
+    cmds:
+      - uv sync
+
+  # Testing & Coverage
   test:
     desc: Run tests with pytest
     cmds:
       - uv run pytest {{.CLI_ARGS}}
 
+  test:coverage:
+    desc: Run pytest with test coverage report
+    cmds:
+      - uv run pytest --cov=scripts --cov-report=term-missing {{.CLI_ARGS}}
+
+  # Linting, Formatting & Spellchecking
+  lint:
+    desc: Lint Python code with ruff and check spelling with typos
+    cmds:
+      - task: lint:py
+      - task: spellcheck
+
+  lint:fix:
+    desc: Fix linting and spelling issues automatically
+    cmds:
+      - task: lint:py:fix
+      - task: spellcheck:fix
+
+  lint:py:
+    desc: Lint Python code with ruff
+    cmds:
+      - uv run ruff check {{.PYTHON_FILES}} {{.CLI_ARGS}}
+
+  lint:py:fix:
+    desc: Automatically fix ruff lint errors
+    cmds:
+      - uv run ruff check --fix {{.PYTHON_FILES}} {{.CLI_ARGS}}
+
+  format:
+    desc: Format Python code with ruff (2-space indent)
+    cmds:
+      - uv run ruff format {{.PYTHON_FILES}} {{.CLI_ARGS}}
+
+  format:check:
+    desc: Verify Python code formatting without modifying files
+    cmds:
+      - uv run ruff format --check {{.PYTHON_FILES}}
+
+  spellcheck:
+    desc: Check spelling with typos across the repository
+    cmds:
+      - typos {{.CLI_ARGS}}
+
+  spellcheck:fix:
+    desc: Automatically fix typos across the repository
+    cmds:
+      - typos --write-changes {{.CLI_ARGS}}
+
+  spellcheck-file:
+    desc: Check spelling with typos on a single file (FILE=path/to/file)
+    cmds:
+      - typos {{.FILE}}
+
+  check:
+    desc: Run lint (ruff + typos), format-check, test suite with coverage, and dataset validation
+    cmds:
+      - task: lint
+      - task: format:check
+      - task: test:coverage
+      - task: validate
+
+  # Data Pipeline
   scrape-gp:
     desc: Scrape Guitar Pro tabs (Priority 1)
     cmds:

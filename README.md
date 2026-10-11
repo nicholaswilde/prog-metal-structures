@@ -154,3 +154,11 @@ The script extracts:
 - Metronome markings (`music21.tempo.MetronomeMark`)
 - Rehearsal marks and text expressions
 - Normalized measure counts
+
+## :balance_scale: License
+
+[Apache License 2.0](LICENSE)
+
+## :writing_hand: Author
+
+This project was started in 2026 by [Nicholas Wilde](https://github.com/nicholaswilde/).

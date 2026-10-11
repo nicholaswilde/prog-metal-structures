@@ -36,7 +36,9 @@ def calculate_metric_entropy(meters: List[str]) -> float:
 
 def build_transition_matrix(meters: List[str]) -> Dict[str, Dict[str, float]]:
   """Build a normalized Markovian meter-transition probability matrix."""
-  transitions: Dict[str, Dict[str, int]] = collections.defaultdict(lambda: collections.defaultdict(int))
+  transitions: Dict[str, Dict[str, int]] = collections.defaultdict(
+    lambda: collections.defaultdict(int)
+  )
 
   for i in range(len(meters) - 1):
     src = meters[i]
@@ -71,7 +73,7 @@ def analyze_track(track_dict: Dict[str, Any]) -> Dict[str, Any]:
     "shift_frequency": calculate_shift_frequency(meters),
     "metric_entropy": calculate_metric_entropy(meters),
     "meter_distribution": distribution,
-    "transition_matrix": build_transition_matrix(meters)
+    "transition_matrix": build_transition_matrix(meters),
   }
 
 
@@ -95,18 +97,20 @@ def analyze_directory(processed_dir: Path, output_file: Path) -> List[Dict[str, 
 
 
 def main() -> None:
-  parser = argparse.ArgumentParser(description="Analyze metric complexity and meter transition matrices")
+  parser = argparse.ArgumentParser(
+    description="Analyze metric complexity and meter transition matrices"
+  )
   parser.add_argument(
     "--input-dir",
     type=Path,
     default=Path("data/processed"),
-    help="Directory containing processed track JSON datasets"
+    help="Directory containing processed track JSON datasets",
   )
   parser.add_argument(
     "--output-file",
     type=Path,
     default=Path("data/processed/analysis/metric_complexity.json"),
-    help="Output JSON file for analysis results"
+    help="Output JSON file for analysis results",
   )
   args = parser.parse_args()
 

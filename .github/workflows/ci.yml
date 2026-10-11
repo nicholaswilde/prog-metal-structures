@@ -8,9 +8,13 @@ on:
     branches:
       - main
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
-  test:
-    name: Run Tests & Schema Validation
+  lint:
+    name: Lint & Formatting
     runs-on: ubuntu-latest
 
     steps:
@@ -29,5 +33,44 @@ jobs:
       - name: Install dependencies
         run: uv sync --all-groups
 
-      - name: Run test suite
-        run: uv run pytest -v
+      - name: Lint with Ruff
+        run: uv run ruff check scripts tests
+
+      - name: Check formatting with Ruff
+        run: uv run ruff format --check scripts tests
+
+  typos:
+    name: Spellcheck
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check spelling
+        uses: crate-ci/typos@v1
+
+  test:
+    name: Run Tests, Coverage & Schema Validation
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          version: "latest"
+          enable-cache: true
+
+      - name: Set up Python
+        run: uv python install 3.12
+
+      - name: Install dependencies
+        run: uv sync --all-groups
+
+      - name: Run test suite with coverage
+        run: uv run pytest --cov=scripts --cov-report=term-missing -v
+
+      - name: Validate dataset schemas
+        run: uv run pytest tests/test_models.py

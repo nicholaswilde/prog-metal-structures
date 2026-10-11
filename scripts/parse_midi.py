@@ -40,11 +40,17 @@ def parse_midi_file(file_path: Path) -> Dict[str, Any]:
   track_id = f"{slugify(artist)}_{slugify(title)}"
 
   # Ensure measures are partitioned
-  primary_stream = score.parts[0] if getattr(score, "parts", None) and len(score.parts) > 0 else score
+  primary_stream = (
+    score.parts[0] if getattr(score, "parts", None) and len(score.parts) > 0 else score
+  )
   measure_elements = list(primary_stream.getElementsByClass("Measure"))
   if not measure_elements:
     score_measured = score.makeMeasures()
-    primary_stream = score_measured.parts[0] if getattr(score_measured, "parts", None) and len(score_measured.parts) > 0 else score_measured
+    primary_stream = (
+      score_measured.parts[0]
+      if getattr(score_measured, "parts", None) and len(score_measured.parts) > 0
+      else score_measured
+    )
     measure_elements = list(primary_stream.getElementsByClass("Measure"))
 
   measures_data: List[Dict[str, Any]] = []
@@ -62,7 +68,11 @@ def parse_midi_file(file_path: Path) -> Dict[str, Any]:
 
   for element in score.recurse():
     if isinstance(element, tempo.MetronomeMark):
-      bpm_val = element.getQuarterBPM() if hasattr(element, "getQuarterBPM") else getattr(element, "number", 120.0)
+      bpm_val = (
+        element.getQuarterBPM()
+        if hasattr(element, "getQuarterBPM")
+        else getattr(element, "number", 120.0)
+      )
       if bpm_val:
         current_bpm = float(bpm_val)
         break
@@ -84,7 +94,11 @@ def parse_midi_file(file_path: Path) -> Dict[str, Any]:
     # Check for tempo changes
     tempo_list = list(m.getElementsByClass(tempo.MetronomeMark))
     if tempo_list:
-      bpm_val = tempo_list[0].getQuarterBPM() if hasattr(tempo_list[0], "getQuarterBPM") else getattr(tempo_list[0], "number", current_bpm)
+      bpm_val = (
+        tempo_list[0].getQuarterBPM()
+        if hasattr(tempo_list[0], "getQuarterBPM")
+        else getattr(tempo_list[0], "number", current_bpm)
+      )
       if bpm_val:
         current_bpm = float(bpm_val)
 
@@ -100,16 +114,13 @@ def parse_midi_file(file_path: Path) -> Dict[str, Any]:
     if section_label:
       if current_section is not None:
         current_section["end_measure"] = measure_num - 1
-      current_section = {
-        "label": section_label,
-        "start_measure": measure_num
-      }
+      current_section = {"label": section_label, "start_measure": measure_num}
       sections.append(current_section)
 
     measure_entry: Dict[str, Any] = {
       "measure_number": measure_num,
       "time_signature": current_ts,
-      "tempo_bpm": round(current_bpm, 2)
+      "tempo_bpm": round(current_bpm, 2),
     }
 
     if section_label:
@@ -135,7 +146,7 @@ def parse_midi_file(file_path: Path) -> Dict[str, Any]:
     "default_tempo_bpm": default_tempo,
     "default_time_signature": default_ts,
     "sections": sections,
-    "measures": measures_data
+    "measures": measures_data,
   }
 
 
@@ -166,18 +177,20 @@ def process_directory(raw_dir: Path, output_dir: Path) -> List[Path]:
 
 
 def main() -> None:
-  parser = argparse.ArgumentParser(description="Parse MIDI files into structural JSON using music21")
+  parser = argparse.ArgumentParser(
+    description="Parse MIDI files into structural JSON using music21"
+  )
   parser.add_argument(
     "--input-dir",
     type=Path,
     default=Path("data/raw/midi"),
-    help="Directory containing .mid/.midi files"
+    help="Directory containing .mid/.midi files",
   )
   parser.add_argument(
     "--output-dir",
     type=Path,
     default=Path("data/processed"),
-    help="Directory to write processed JSON datasets"
+    help="Directory to write processed JSON datasets",
   )
   args = parser.parse_args()
 

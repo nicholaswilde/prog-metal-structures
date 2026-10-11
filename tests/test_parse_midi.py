@@ -1,8 +1,7 @@
 """Tests for MIDI parser."""
 
 from pathlib import Path
-import pytest
-from scripts.parse_midi import parse_midi_file, slugify
+from scripts.parse_midi import parse_midi_file
 
 
 def test_parse_midi_existing_sample():

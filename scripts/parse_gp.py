@@ -3,7 +3,6 @@
 
 import argparse
 import json
-import os
 import re
 from pathlib import Path
 from typing import Any, Dict, List, Optional
@@ -38,7 +37,7 @@ def parse_gp_file(file_path: Path) -> Dict[str, Any]:
     for candidate in ["dream-theater", "animals-as-leaders", "between-the-buried-and-me"]:
       if stem.startswith(candidate + "-"):
         raw_artist = candidate.replace("-", " ").title()
-        raw_title = stem[len(candidate) + 1:].replace("_", " ").title()
+        raw_title = stem[len(candidate) + 1 :].replace("_", " ").title()
         matched = True
         break
     if not matched:
@@ -81,16 +80,13 @@ def parse_gp_file(file_path: Path) -> Dict[str, Any]:
       section_label = header.marker.title.strip()
       if current_section is not None:
         current_section["end_measure"] = measure_num - 1
-      current_section = {
-        "label": section_label,
-        "start_measure": measure_num
-      }
+      current_section = {"label": section_label, "start_measure": measure_num}
       sections.append(current_section)
 
     measure_entry: Dict[str, Any] = {
       "measure_number": measure_num,
       "time_signature": current_ts,
-      "tempo_bpm": round(current_tempo, 2)
+      "tempo_bpm": round(current_tempo, 2),
     }
 
     if section_label:
@@ -116,7 +112,7 @@ def parse_gp_file(file_path: Path) -> Dict[str, Any]:
     "default_tempo_bpm": default_tempo,
     "default_time_signature": default_ts,
     "sections": sections,
-    "measures": measures_data
+    "measures": measures_data,
   }
 
 
@@ -152,13 +148,13 @@ def main() -> None:
     "--input-dir",
     type=Path,
     default=Path("data/raw/guitar_pro"),
-    help="Directory containing .gp3/.gp4/.gp5 files"
+    help="Directory containing .gp3/.gp4/.gp5 files",
   )
   parser.add_argument(
     "--output-dir",
     type=Path,
     default=Path("data/processed"),
-    help="Directory to write processed JSON datasets"
+    help="Directory to write processed JSON datasets",
   )
   args = parser.parse_args()
 

@@ -1,15 +1,11 @@
 """Tests for generative meter progression model under TDD."""
 
-import pytest
 from scripts.generate_progression import MeterSequenceGenerator
 
 
 def test_generator_training():
   """Verify sequence generator trains transitions from corpus."""
-  corpus = [
-    ["4/4", "7/8", "7/8", "5/8", "4/4"],
-    ["4/4", "13/8", "7/8", "4/4"]
-  ]
+  corpus = [["4/4", "7/8", "7/8", "5/8", "4/4"], ["4/4", "13/8", "7/8", "4/4"]]
   gen = MeterSequenceGenerator(order=1)
   gen.train(corpus)
   assert "4/4" in gen.transitions
@@ -40,7 +36,7 @@ def test_generator_to_track_architecture():
     artist="AI Prog Collective",
     length=16,
     default_tempo=135.0,
-    seed_meter="4/4"
+    seed_meter="4/4",
   )
   assert track.title == "Algorithmic Overture"
   assert len(track.measures) == 16

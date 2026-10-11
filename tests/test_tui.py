@@ -1,7 +1,6 @@
 """Tests for Catppuccin Mocha TUI runner."""
 
-from pathlib import Path
-from scripts.runner import IngestionTUI, TrackStats
+from scripts.runner import IngestionTUI
 
 
 def test_compute_track_stats():
@@ -18,7 +17,7 @@ def test_compute_track_stats():
       {"measure_number": 3, "time_signature": "7/8", "tempo_bpm": 120.0},
       {"measure_number": 4, "time_signature": "5/8", "tempo_bpm": 120.0},
       {"measure_number": 5, "time_signature": "4/4", "tempo_bpm": 120.0},
-    ]
+    ],
   }
   stats = IngestionTUI.compute_stats(track_data)
   assert stats.total_measures == 5

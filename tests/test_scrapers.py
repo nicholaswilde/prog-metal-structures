@@ -1,9 +1,7 @@
 """Tests for Guitar Pro and MIDI scrapers using respx to mock HTTP."""
 
 from pathlib import Path
-import pytest
 import respx
-import httpx
 from scripts.scrape_gp import GuitarProScraper
 from scripts.scrape_midi import MidiScraper
 
@@ -19,9 +17,9 @@ def test_scrape_gp_artist_and_tabs(tmp_path: Path):
 
   # Mock artist tabs page
   tabs_html = (
-    '<html><body>'
+    "<html><body>"
     '<a href="/en/tabs/dream-theater/the-dance-of-eternity">The Dance of Eternity</a>'
-    '</body></html>'
+    "</body></html>"
   )
   respx.get("https://gprotab.net/en/tabs/dream-theater").respond(200, text=tabs_html)
 
@@ -29,13 +27,11 @@ def test_scrape_gp_artist_and_tabs(tmp_path: Path):
   respx.get("https://gprotab.net/en/tabs/dream-theater/the-dance-of-eternity?download").respond(
     200,
     content=b"GP5 DUMMY CONTENT",
-    headers={"Content-Disposition": 'attachment; filename="dance.gp5"'}
+    headers={"Content-Disposition": 'attachment; filename="dance.gp5"'},
   )
 
   results = scraper.scrape_artist_tracks(
-    artist_name="Dream Theater",
-    track_filter="Dance",
-    max_tracks=1
+    artist_name="Dream Theater", track_filter="Dance", max_tracks=1
   )
 
   assert len(results) == 1
@@ -49,17 +45,12 @@ def test_scrape_midi_fallback(tmp_path: Path):
   scraper = MidiScraper(output_dir=tmp_path)
 
   # Mock metal midi archive page
-  archive_html = (
-    '<html><body>'
-    '<a href="midi/test/test_song.mid">Test Song</a>'
-    '</body></html>'
-  )
+  archive_html = '<html><body><a href="midi/test/test_song.mid">Test Song</a></body></html>'
   respx.get("http://metal-midi.grahamdowney.com/midi.html").respond(200, text=archive_html)
 
   # Mock direct download
   respx.get("http://metal-midi.grahamdowney.com/midi/test/test_song.mid").respond(
-    200,
-    content=b"MIDI DUMMY DATA"
+    200, content=b"MIDI DUMMY DATA"
   )
 
   # Scrape non-local song query
