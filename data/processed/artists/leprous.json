@@ -1,0 +1,45 @@
+{
+  "artist_id": "leprous",
+  "name": "Leprous",
+  "country": "Norway",
+  "formed_year": 2001,
+  "genres": [
+    "Progressive Metal",
+    "Avant-Garde Metal",
+    "Art Rock"
+  ],
+  "total_parsed_tracks": 4,
+  "albums": [
+    {
+      "album_id": "tall_poppy_syndrome",
+      "title": "Tall Poppy Syndrome",
+      "release_year": 2009,
+      "total_tracks": 8,
+      "parsed_tracks_count": 1,
+      "track_ids": [
+        "leprous_he_will_kill_again"
+      ]
+    },
+    {
+      "album_id": "bilateral",
+      "title": "Bilateral",
+      "release_year": 2011,
+      "total_tracks": 10,
+      "parsed_tracks_count": 2,
+      "track_ids": [
+        "leprous_restless",
+        "leprous_chronic"
+      ]
+    },
+    {
+      "album_id": "coal",
+      "title": "Coal",
+      "release_year": 2013,
+      "total_tracks": 8,
+      "parsed_tracks_count": 1,
+      "track_ids": [
+        "leprous_the_cloak"
+      ]
+    }
+  ]
+}

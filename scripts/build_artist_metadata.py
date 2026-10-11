@@ -31,22 +31,14 @@ def build_artist_metadata(processed_dir: Path, output_dir: Path) -> List[Path]:
     try:
       data = json.loads(track_file.read_text(encoding="utf-8"))
       track = TrackArchitecture.model_validate(data)
-      # slugify artist key
-      artist_key = track.track_id.split("_")[0]
-      if "dream_theater" in track.track_id:
-        artist_key = "dream_theater"
-      elif "opeth" in track.track_id:
-        artist_key = "opeth"
-      elif "tool" in track.track_id:
-        artist_key = "tool"
-      elif "meshuggah" in track.track_id:
-        artist_key = "meshuggah"
-      elif "haken" in track.track_id:
-        artist_key = "haken"
-      elif "animals_as_leaders" in track.track_id:
-        artist_key = "animals_as_leaders"
-      elif "between_the_buried_and_me" in track.track_id:
-        artist_key = "between_the_buried_and_me"
+      # Dynamically match artist key against known discography prefixes
+      artist_key = "unknown"
+      for candidate_key in DISCOGRAPHY.keys():
+        if track.track_id.startswith(f"{candidate_key}_"):
+          artist_key = candidate_key
+          break
+      if artist_key == "unknown":
+        artist_key = track.track_id.split("_")[0]
 
       tracks_by_artist.setdefault(artist_key, []).append(track)
     except Exception as exc:
@@ -74,11 +66,12 @@ def build_artist_metadata(processed_dir: Path, output_dir: Path) -> List[Path]:
     album_models: List[AlbumMetadata] = []
     for alb_name, track_ids in albums_map.items():
       known_alb = info.get("albums", {}).get(alb_name, {})
+      inferred_year = next((t.year for t in tracks if t.album == alb_name and t.year), 2000)
       album_models.append(
         AlbumMetadata(
           album_id=alb_name.lower().replace(" ", "_"),
           title=alb_name,
-          release_year=known_alb.get("release_year", 2000),
+          release_year=known_alb.get("release_year") or inferred_year,
           total_tracks=known_alb.get("total_tracks", len(track_ids)),
           parsed_tracks_count=len(track_ids),
           track_ids=track_ids,

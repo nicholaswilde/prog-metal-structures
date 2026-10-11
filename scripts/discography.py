@@ -237,6 +237,79 @@ DISCOGRAPHY: Dict[str, Dict[str, Any]] = {
       "99 ways to die": ("The Beavis and Butt-Head Experience", 1993),
     },
   },
+  "porcupine_tree": {
+    "name": "Porcupine Tree",
+    "country": "United Kingdom",
+    "formed_year": 1987,
+    "genres": ["Progressive Rock", "Progressive Metal", "Art Rock"],
+    "albums": {
+      "In Absentia": {"release_year": 2002, "total_tracks": 12},
+      "Deadwing": {"release_year": 2005, "total_tracks": 9},
+      "Fear of a Blank Planet": {"release_year": 2007, "total_tracks": 6},
+    },
+    "track_map": {
+      "blackest eyes": ("In Absentia", 2002),
+      "trains": ("In Absentia", 2002),
+      "the sound of muzak": ("In Absentia", 2002),
+      "halo": ("Deadwing", 2005),
+    },
+  },
+  "leprous": {
+    "name": "Leprous",
+    "country": "Norway",
+    "formed_year": 2001,
+    "genres": ["Progressive Metal", "Avant-Garde Metal", "Art Rock"],
+    "albums": {
+      "Tall Poppy Syndrome": {"release_year": 2009, "total_tracks": 8},
+      "Bilateral": {"release_year": 2011, "total_tracks": 10},
+      "Coal": {"release_year": 2013, "total_tracks": 8},
+      "The Congregation": {"release_year": 2015, "total_tracks": 11},
+    },
+    "track_map": {
+      "he will kill again": ("Tall Poppy Syndrome", 2009),
+      "bilateral": ("Bilateral", 2011),
+      "chronic": ("Bilateral", 2011),
+      "restless": ("Bilateral", 2011),
+      "the cloak": ("Coal", 2013),
+    },
+  },
+  "symphony_x": {
+    "name": "Symphony X",
+    "country": "United States",
+    "formed_year": 1994,
+    "genres": ["Progressive Metal", "Power Metal", "Neoclassical Metal"],
+    "albums": {
+      "The Divine Wings of Tragedy": {"release_year": 1997, "total_tracks": 9},
+      "V: The New Mythology Suite": {"release_year": 2000, "total_tracks": 13},
+      "The Odyssey": {"release_year": 2002, "total_tracks": 8},
+    },
+    "track_map": {
+      "the divine wings of tragedy": ("The Divine Wings of Tragedy", 1997),
+      "the accolade": ("The Divine Wings of Tragedy", 1997),
+      "evolution": ("V: The New Mythology Suite", 2000),
+      "communion and the oracle": ("V: The New Mythology Suite", 2000),
+      "the odyssey": ("The Odyssey", 2002),
+      "accolade ii": ("The Odyssey", 2002),
+    },
+  },
+  "periphery": {
+    "name": "Periphery",
+    "country": "United States",
+    "formed_year": 2005,
+    "genres": ["Progressive Metal", "Djent", "Metalcore"],
+    "albums": {
+      "Periphery": {"release_year": 2010, "total_tracks": 12},
+      "Periphery II: This Time It's Personal": {"release_year": 2012, "total_tracks": 14},
+    },
+    "track_map": {
+      "icarus lives": ("Periphery", 2010),
+      "jetpacks was yes": ("Periphery", 2010),
+      "letter experiment": ("Periphery", 2010),
+      "zyglrox": ("Periphery", 2010),
+      "muramasa": ("Periphery II: This Time It's Personal", 2012),
+      "scarlet": ("Periphery II: This Time It's Personal", 2012),
+    },
+  },
 }
 
 

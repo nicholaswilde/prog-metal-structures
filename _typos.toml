@@ -27,6 +27,8 @@ extend-exclude = [
 "hemiola" = "hemiola"
 "microtonal" = "microtonal"
 "Markovian" = "Markovian"
+"Pont" = "Pont"
+"guitares" = "guitares"
 
 # Band names & tab misspellings
 "theather" = "theather"

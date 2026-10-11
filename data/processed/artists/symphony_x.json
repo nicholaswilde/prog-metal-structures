@@ -1,0 +1,47 @@
+{
+  "artist_id": "symphony_x",
+  "name": "Symphony X",
+  "country": "United States",
+  "formed_year": 1994,
+  "genres": [
+    "Progressive Metal",
+    "Power Metal",
+    "Neoclassical Metal"
+  ],
+  "total_parsed_tracks": 6,
+  "albums": [
+    {
+      "album_id": "the_divine_wings_of_tragedy",
+      "title": "The Divine Wings of Tragedy",
+      "release_year": 1997,
+      "total_tracks": 9,
+      "parsed_tracks_count": 2,
+      "track_ids": [
+        "symphony_x_the_divine_wings_of_tragedy",
+        "symphony_x_the_accolade"
+      ]
+    },
+    {
+      "album_id": "v:_the_new_mythology_suite",
+      "title": "V: The New Mythology Suite",
+      "release_year": 2000,
+      "total_tracks": 13,
+      "parsed_tracks_count": 2,
+      "track_ids": [
+        "symphony_x_communion_and_the_oracle",
+        "symphony_x_evolution"
+      ]
+    },
+    {
+      "album_id": "the_odyssey",
+      "title": "The Odyssey",
+      "release_year": 2002,
+      "total_tracks": 8,
+      "parsed_tracks_count": 2,
+      "track_ids": [
+        "symphony_x_the_odyssey",
+        "symphony_x_accolade_ii"
+      ]
+    }
+  ]
+}

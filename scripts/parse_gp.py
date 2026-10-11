@@ -41,6 +41,8 @@ def parse_gp_file(file_path: Path) -> Dict[str, Any]:
     raw_artist = "Dream Theater"
   elif raw_artist.lower() in {"tosin abasi", "tosin"}:
     raw_artist = "Animals as Leaders"
+  elif raw_artist.lower().startswith("by "):
+    raw_artist = raw_artist[3:].strip()
 
   # Fallback to file name stem if artist or title is missing
   if not raw_artist or raw_artist.lower() in {"unknown", "unknown artist"} or not raw_title:
@@ -54,6 +56,12 @@ def parse_gp_file(file_path: Path) -> Dict[str, Any]:
       "between-the-buried-and-me",
       "between_the_buried_and_me",
       "meshuggah",
+      "porcupine-tree",
+      "porcupine_tree",
+      "symphony-x",
+      "symphony_x",
+      "periphery",
+      "leprous",
     ]:
       if stem.startswith(candidate + "-"):
         if not raw_artist or raw_artist.lower() in {"unknown", "unknown artist"}:

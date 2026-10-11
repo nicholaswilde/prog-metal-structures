@@ -1,0 +1,38 @@
+{
+  "artist_id": "periphery",
+  "name": "Periphery",
+  "country": "United States",
+  "formed_year": 2005,
+  "genres": [
+    "Progressive Metal",
+    "Djent",
+    "Metalcore"
+  ],
+  "total_parsed_tracks": 6,
+  "albums": [
+    {
+      "album_id": "periphery",
+      "title": "Periphery",
+      "release_year": 2010,
+      "total_tracks": 12,
+      "parsed_tracks_count": 4,
+      "track_ids": [
+        "periphery_jetpacks_was_yes",
+        "periphery_icarus_lives",
+        "periphery_zyglrox",
+        "periphery_letter_experiment"
+      ]
+    },
+    {
+      "album_id": "periphery_ii:_this_time_it's_personal",
+      "title": "Periphery II: This Time It's Personal",
+      "release_year": 2012,
+      "total_tracks": 14,
+      "parsed_tracks_count": 2,
+      "track_ids": [
+        "periphery_scarlet",
+        "periphery_muramasa"
+      ]
+    }
+  ]
+}

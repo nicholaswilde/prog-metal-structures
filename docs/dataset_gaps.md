@@ -1,8 +1,8 @@
 # Progressive Metal Dataset: Data Gap & Completeness Report
 
-**Overall Discography Coverage**: 26.5%
-**Parsed Tracks**: 87 | **Expected Discography Tracks**: 328
-**Tracked Artists**: 9 | **Tracked Albums**: 33
+**Overall Discography Coverage**: 24.8%
+**Parsed Tracks**: 107 | **Expected Discography Tracks**: 431
+**Tracked Artists**: 13 | **Tracked Albums**: 43
 
 ---
 
@@ -20,19 +20,29 @@
 | Meshuggah | Destroy Erase Improve | 1995 | 1 / 10 | 10.0% | 9 missing |
 | Haken | The Mountain | 2013 | 1 / 9 | 11.1% | 8 missing |
 | Opeth | My Arms, Your Hearse | 1998 | 1 / 9 | 11.1% | 8 missing |
+| Porcupine Tree | Deadwing | 2005 | 1 / 9 | 11.1% | 8 missing |
 | Dream Theater | Octavarium | 2005 | 1 / 8 | 12.5% | 7 missing |
 | Dream Theater | Systematic Chaos | 2007 | 1 / 8 | 12.5% | 7 missing |
+| Leprous | Tall Poppy Syndrome | 2009 | 1 / 8 | 12.5% | 7 missing |
+| Leprous | Coal | 2013 | 1 / 8 | 12.5% | 7 missing |
+| Periphery | Periphery II: This Time It's Personal | 2012 | 2 / 14 | 14.3% | 12 missing |
 | Opeth | Still Life | 1999 | 1 / 7 | 14.3% | 6 missing |
 | Epica | Design Your Universe | 2009 | 2 / 13 | 15.4% | 11 missing |
 | Epica | Requiem for the Indifferent | 2012 | 2 / 13 | 15.4% | 11 missing |
+| Symphony X | V: The New Mythology Suite | 2000 | 2 / 13 | 15.4% | 11 missing |
 | Animals as Leaders | The Joy of Motion | 2014 | 2 / 12 | 16.7% | 10 missing |
 | Animals as Leaders | Weightless | 2011 | 2 / 12 | 16.7% | 10 missing |
 | Between the Buried and Me | The Silent Circus | 2003 | 2 / 10 | 20.0% | 8 missing |
+| Leprous | Bilateral | 2011 | 2 / 10 | 20.0% | 8 missing |
 | Dream Theater | A Change of Seasons | 1995 | 1 / 5 | 20.0% | 4 missing |
+| Symphony X | The Divine Wings of Tragedy | 1997 | 2 / 9 | 22.2% | 7 missing |
 | Epica | The Divine Conspiracy | 2007 | 3 / 13 | 23.1% | 10 missing |
+| Porcupine Tree | In Absentia | 2002 | 3 / 12 | 25.0% | 9 missing |
 | Dream Theater | Images and Words | 1992 | 2 / 8 | 25.0% | 6 missing |
+| Symphony X | The Odyssey | 2002 | 2 / 8 | 25.0% | 6 missing |
 | Dream Theater | Train of Thought | 2003 | 2 / 7 | 28.6% | 5 missing |
 | Animals as Leaders | Animals as Leaders | 2009 | 4 / 12 | 33.3% | 8 missing |
+| Periphery | Periphery | 2010 | 4 / 12 | 33.3% | 8 missing |
 | Opeth | Deliverance | 2002 | 2 / 6 | 33.3% | 4 missing |
 | Tool | 10,000 Days | 2006 | 4 / 11 | 36.4% | 7 missing |
 | Meshuggah | Nothing | 2002 | 4 / 10 | 40.0% | 6 missing |
@@ -50,11 +60,11 @@
 
 | Quality Metric | Tracks Checked | Complete | Missing | Completeness % | Status |
 | :--- | :---: | :---: | :---: | :---: | :--- |
-| **Album Title** | 87 | 87 | 0 | 100.0% | **OK** |
-| **Release Year** | 87 | 87 | 0 | 100.0% | **OK** |
-| **Default Tempo (BPM)** | 87 | 87 | 0 | 100.0% | **OK** |
-| **Formal Section Breakdown** | 87 | 38 | 49 | 43.7% | Backlog Target |
-| **Measure Sequence Data** | 87 | 87 | 0 | 100.0% | **OK** |
+| **Album Title** | 107 | 107 | 0 | 100.0% | **OK** |
+| **Release Year** | 107 | 107 | 0 | 100.0% | **OK** |
+| **Default Tempo (BPM)** | 107 | 107 | 0 | 100.0% | **OK** |
+| **Formal Section Breakdown** | 107 | 51 | 56 | 47.7% | Backlog Target |
+| **Measure Sequence Data** | 107 | 107 | 0 | 100.0% | **OK** |
 
 ---
 
