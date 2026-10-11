@@ -7,8 +7,41 @@
     "Progressive Death Metal",
     "Progressive Rock"
   ],
-  "total_parsed_tracks": 2,
+  "total_parsed_tracks": 7,
   "albums": [
+    {
+      "album_id": "blackwater_park",
+      "title": "Blackwater Park",
+      "release_year": 2001,
+      "total_tracks": 8,
+      "parsed_tracks_count": 3,
+      "track_ids": [
+        "opeth_bleak",
+        "opeth_the_drapery_falls",
+        "opeth_blackwater_park"
+      ]
+    },
+    {
+      "album_id": "deliverance",
+      "title": "Deliverance",
+      "release_year": 2000,
+      "total_tracks": 1,
+      "parsed_tracks_count": 1,
+      "track_ids": [
+        "opeth_deliverance"
+      ]
+    },
+    {
+      "album_id": "ghost_reveries",
+      "title": "Ghost Reveries",
+      "release_year": 2005,
+      "total_tracks": 8,
+      "parsed_tracks_count": 2,
+      "track_ids": [
+        "opeth_harlequin_forest",
+        "opeth_the_grand_conjuration"
+      ]
+    },
     {
       "album_id": "ghost_reveries_(2005)",
       "title": "Ghost Reveries (2005)",
@@ -17,16 +50,6 @@
       "parsed_tracks_count": 1,
       "track_ids": [
         "opeth_ghost_of_perdition"
-      ]
-    },
-    {
-      "album_id": "blackwater_park",
-      "title": "Blackwater Park",
-      "release_year": 2001,
-      "total_tracks": 8,
-      "parsed_tracks_count": 1,
-      "track_ids": [
-        "opeth_blackwater_park"
       ]
     }
   ]
