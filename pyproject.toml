@@ -11,6 +11,7 @@ dependencies = [
     "music21>=9.9.2",
     "pydantic>=2.14.0",
     "pyguitarpro>=0.11",
+    "rich>=15.0.0",
 ]
 
 [dependency-groups]
