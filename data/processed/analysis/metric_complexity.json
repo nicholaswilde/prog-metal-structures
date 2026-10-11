@@ -158,6 +158,23 @@
     }
   },
   {
+    "track_id": "epica_seif_al_din",
+    "title": "Seif Al Din",
+    "artist": "Epica",
+    "total_measures": 222,
+    "unique_meters": 1,
+    "shift_frequency": 0.0,
+    "metric_entropy": 0.0,
+    "meter_distribution": {
+      "2/4": 1.0
+    },
+    "transition_matrix": {
+      "2/4": {
+        "2/4": 1.0
+      }
+    }
+  },
+  {
     "track_id": "meshuggah_rational_gaze",
     "title": "Rational gaze",
     "artist": "Meshuggah",
@@ -510,6 +527,68 @@
       },
       "9/8": {
         "6/4": 1.0
+      }
+    }
+  },
+  {
+    "track_id": "epica_unleashed",
+    "title": "Unleashed",
+    "artist": "Epica",
+    "total_measures": 359,
+    "unique_meters": 2,
+    "shift_frequency": 0.0335,
+    "metric_entropy": 0.2113,
+    "meter_distribution": {
+      "6/8": 0.9666,
+      "8/8": 0.0334
+    },
+    "transition_matrix": {
+      "6/8": {
+        "6/8": 0.9827,
+        "8/8": 0.0173
+      },
+      "8/8": {
+        "8/8": 0.5,
+        "6/8": 0.5
+      }
+    }
+  },
+  {
+    "track_id": "epica_our_destiny",
+    "title": "Our Destiny",
+    "artist": "Epica",
+    "total_measures": 133,
+    "unique_meters": 5,
+    "shift_frequency": 0.0833,
+    "metric_entropy": 0.6633,
+    "meter_distribution": {
+      "4/4": 0.8947,
+      "11/8": 0.0301,
+      "7/8": 0.0526,
+      "1/8": 0.015,
+      "2/4": 0.0075
+    },
+    "transition_matrix": {
+      "4/4": {
+        "4/4": 0.9746,
+        "11/8": 0.0169,
+        "2/4": 0.0085
+      },
+      "11/8": {
+        "11/8": 0.5,
+        "7/8": 0.5
+      },
+      "7/8": {
+        "7/8": 0.5714,
+        "1/8": 0.2857,
+        "4/4": 0.1429
+      },
+      "1/8": {
+        "7/8": 0.5,
+        "4/4": 0.5
+      },
+      "2/4": {
+        "4/4": 1.0
       }
     }
   },
@@ -889,6 +968,23 @@
     }
   },
   {
+    "track_id": "epica_feint",
+    "title": "Feint",
+    "artist": "Epica",
+    "total_measures": 105,
+    "unique_meters": 1,
+    "shift_frequency": 0.0,
+    "metric_entropy": 0.0,
+    "meter_distribution": {
+      "4/4": 1.0
+    },
+    "transition_matrix": {
+      "4/4": {
+        "4/4": 1.0
+      }
+    }
+  },
+  {
     "track_id": "epica_sensorium",
     "title": "Sensorium",
     "artist": "Epica",
@@ -939,6 +1035,39 @@
       },
       "3/4": {
         "4/4": 1.0
+      }
+    }
+  },
+  {
+    "track_id": "epica_the_obsessive_devotion",
+    "title": "The Obsessive Devotion",
+    "artist": "Epica",
+    "total_measures": 335,
+    "unique_meters": 4,
+    "shift_frequency": 0.0359,
+    "metric_entropy": 0.6887,
+    "meter_distribution": {
+      "4/4": 0.8507,
+      "3/4": 0.0119,
+      "2/4": 0.003,
+      "6/8": 0.1343
+    },
+    "transition_matrix": {
+      "4/4": {
+        "4/4": 0.9789,
+        "3/4": 0.0141,
+        "2/4": 0.0035,
+        "6/8": 0.0035
+      },
+      "3/4": {
+        "4/4": 1.0
+      },
+      "2/4": {
+        "4/4": 1.0
+      },
+      "6/8": {
+        "6/8": 0.9778,
+        "4/4": 0.0222
       }
     }
   },
