@@ -84,6 +84,18 @@ ARTIST_KNOWLEDGE = {
       "Alaska": {"release_year": 2005, "total_tracks": 11},
       "Colors": {"release_year": 2007, "total_tracks": 8}
     }
+  },
+  "epica": {
+    "name": "Epica",
+    "country": "Netherlands",
+    "formed_year": 2002,
+    "genres": ["Symphonic Metal", "Progressive Metal", "Gothic Metal"],
+    "albums": {
+      "The Phantom Agony": {"release_year": 2003, "total_tracks": 9},
+      "Consign to Oblivion": {"release_year": 2005, "total_tracks": 11},
+      "Design Your Universe": {"release_year": 2009, "total_tracks": 13},
+      "Requiem for the Indifferent": {"release_year": 2012, "total_tracks": 13}
+    }
   }
 }
 

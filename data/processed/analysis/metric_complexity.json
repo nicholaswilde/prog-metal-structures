@@ -571,6 +571,28 @@
     }
   },
   {
+    "track_id": "epica_the_last_crusade",
+    "title": "The Last Crusade",
+    "artist": "Epica",
+    "total_measures": 135,
+    "unique_meters": 2,
+    "shift_frequency": 0.0597,
+    "metric_entropy": 0.1925,
+    "meter_distribution": {
+      "4/4": 0.9704,
+      "2/4": 0.0296
+    },
+    "transition_matrix": {
+      "4/4": {
+        "4/4": 0.9692,
+        "2/4": 0.0308
+      },
+      "2/4": {
+        "4/4": 1.0
+      }
+    }
+  },
+  {
     "track_id": "dream_theater_metropolis_part_1_the_miracle_and_the_sleeper",
     "title": "Metropolis Part 1 The Miracle And The Sleeper",
     "artist": "Dream Theater",
@@ -707,6 +729,44 @@
     }
   },
   {
+    "track_id": "epica_requiem_for_the_indifferent",
+    "title": "Requiem for the Indifferent",
+    "artist": "Epica",
+    "total_measures": 254,
+    "unique_meters": 5,
+    "shift_frequency": 0.1028,
+    "metric_entropy": 0.4289,
+    "meter_distribution": {
+      "4/4": 0.9409,
+      "2/4": 0.0197,
+      "3/4": 0.0236,
+      "5/4": 0.0118,
+      "6/4": 0.0039
+    },
+    "transition_matrix": {
+      "4/4": {
+        "4/4": 0.9496,
+        "2/4": 0.021,
+        "3/4": 0.0252,
+        "6/4": 0.0042
+      },
+      "2/4": {
+        "4/4": 1.0
+      },
+      "3/4": {
+        "4/4": 0.8333,
+        "5/4": 0.1667
+      },
+      "5/4": {
+        "4/4": 0.6667,
+        "5/4": 0.3333
+      },
+      "6/4": {
+        "5/4": 1.0
+      }
+    }
+  },
+  {
     "track_id": "meshuggah_future_breed_machine",
     "title": "Future Breed Machine",
     "artist": "Meshuggah",
@@ -824,6 +884,32 @@
         "19/16": 1.0
       },
       "6/16": {
+        "4/4": 1.0
+      }
+    }
+  },
+  {
+    "track_id": "epica_sensorium",
+    "title": "Sensorium",
+    "artist": "Epica",
+    "total_measures": 159,
+    "unique_meters": 3,
+    "shift_frequency": 0.0316,
+    "metric_entropy": 0.1524,
+    "meter_distribution": {
+      "1/8": 0.0063,
+      "4/4": 0.9811,
+      "2/4": 0.0126
+    },
+    "transition_matrix": {
+      "1/8": {
+        "4/4": 1.0
+      },
+      "4/4": {
+        "4/4": 0.9871,
+        "2/4": 0.0129
+      },
+      "2/4": {
         "4/4": 1.0
       }
     }
@@ -1112,6 +1198,38 @@
         "4/4": 0.916,
         "2/4": 0.0252,
         "6/4": 0.0588
+      },
+      "2/4": {
+        "4/4": 1.0
+      },
+      "6/4": {
+        "4/4": 1.0
+      }
+    }
+  },
+  {
+    "track_id": "epica_cry_for_the_moon",
+    "title": "Cry for the Moon",
+    "artist": "Epica",
+    "total_measures": 164,
+    "unique_meters": 4,
+    "shift_frequency": 0.0491,
+    "metric_entropy": 0.202,
+    "meter_distribution": {
+      "4/4": 0.9756,
+      "3/4": 0.0061,
+      "2/4": 0.0122,
+      "6/4": 0.0061
+    },
+    "transition_matrix": {
+      "4/4": {
+        "4/4": 0.9748,
+        "3/4": 0.0063,
+        "2/4": 0.0126,
+        "6/4": 0.0063
+      },
+      "3/4": {
+        "4/4": 1.0
       },
       "2/4": {
         "4/4": 1.0

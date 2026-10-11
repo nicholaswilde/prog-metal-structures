@@ -1,0 +1,834 @@
+{
+  "track_id": "epica_cry_for_the_moon",
+  "title": "Cry for the Moon",
+  "artist": "Epica",
+  "album": "Phanton Agony",
+  "source_file": "epica-cry_for_the_moon.gp4",
+  "source_format": "gp4",
+  "total_measures": 164,
+  "default_tempo_bpm": 120.0,
+  "default_time_signature": "4/4",
+  "sections": [],
+  "measures": [
+    {
+      "measure_number": 1,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 2,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 3,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 4,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 5,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 6,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 7,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 8,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 9,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 10,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 11,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 12,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 13,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 14,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 15,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 16,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 17,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 18,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 19,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 20,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 21,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 22,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 23,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 24,
+      "time_signature": "3/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 25,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 26,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 27,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 28,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 29,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 30,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 31,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 32,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 33,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 34,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 35,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 36,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 37,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 38,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 39,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 40,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 41,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 42,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 43,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 44,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 45,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 46,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 47,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 48,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 49,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 50,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 51,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 52,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 53,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 54,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 55,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 56,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 57,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 58,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 59,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 60,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 61,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 62,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 63,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 64,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 65,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 66,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 67,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 68,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 69,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 70,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 71,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 72,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 73,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 74,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 75,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 76,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 77,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 78,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 79,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 80,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 81,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 82,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 83,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 84,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 85,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 86,
+      "time_signature": "2/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 87,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 88,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 89,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 90,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 91,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 92,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 93,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 94,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 95,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 96,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 97,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 98,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 99,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 100,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 101,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 102,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 103,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 104,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 105,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 106,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 107,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 108,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 109,
+      "time_signature": "2/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 110,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 111,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 112,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 113,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 114,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 115,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 116,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 117,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 118,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 119,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 120,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 121,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 122,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 123,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 124,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 125,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 126,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 127,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 128,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 129,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 130,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 131,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 132,
+      "time_signature": "6/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 133,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 134,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 135,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 136,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 137,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 138,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 139,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 140,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 141,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 142,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 143,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 144,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 145,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 146,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 147,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 148,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 149,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 150,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 151,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 152,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 153,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 154,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 155,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 156,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 157,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 158,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 159,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 160,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 161,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 162,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 163,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 164,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    }
+  ]
+}
