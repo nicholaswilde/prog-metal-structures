@@ -1,0 +1,22 @@
+[project]
+name = "prog-metal-structures"
+version = "0.1.0"
+description = "Dataset mapping structural metadata, meter shifts, tempos, and sections in progressive metal tracks."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "beautifulsoup4>=4.15.0",
+    "httpx>=0.28.1",
+    "jsonschema>=4.26.0",
+    "music21>=9.9.2",
+    "pydantic>=2.14.0",
+    "pyguitarpro>=0.11",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]

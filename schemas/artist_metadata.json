@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/nicholaswilde/prog-metal-structures/main/schemas/artist_metadata.json",
+  "title": "ArtistMetadata",
+  "description": "Schema for band details, album context, and total parsed track counts.",
+  "type": "object",
+  "required": [
+    "artist_id",
+    "name",
+    "albums",
+    "total_parsed_tracks"
+  ],
+  "properties": {
+    "artist_id": {
+      "type": "string",
+      "description": "Unique identifier for the artist"
+    },
+    "name": {
+      "type": "string",
+      "description": "Band or artist name"
+    },
+    "country": {
+      "type": "string",
+      "description": "Country of origin"
+    },
+    "formed_year": {
+      "type": "integer",
+      "minimum": 1900,
+      "description": "Year formed"
+    },
+    "genres": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Associated genres and subgenres"
+    },
+    "total_parsed_tracks": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Total number of tracks parsed into the dataset"
+    },
+    "albums": {
+      "type": "array",
+      "description": "Album discography context and coverage",
+      "items": {
+        "type": "object",
+        "required": [
+          "title",
+          "release_year",
+          "parsed_tracks_count"
+        ],
+        "properties": {
+          "album_id": {
+            "type": "string",
+            "description": "Identifier for the album"
+          },
+          "title": {
+            "type": "string",
+            "description": "Album title"
+          },
+          "release_year": {
+            "type": "integer",
+            "minimum": 1900,
+            "description": "Album release year"
+          },
+          "total_tracks": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "Total tracks on released album"
+          },
+          "parsed_tracks_count": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Count of tracks ingested into dataset"
+          },
+          "track_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "References to track IDs included in dataset"
+          }
+        }
+      }
+    }
+  }
+}

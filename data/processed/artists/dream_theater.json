@@ -1,0 +1,24 @@
+{
+  "artist_id": "dream_theater",
+  "name": "Dream Theater",
+  "country": "United States",
+  "formed_year": 1985,
+  "genres": [
+    "Progressive Metal",
+    "Progressive Rock"
+  ],
+  "total_parsed_tracks": 2,
+  "albums": [
+    {
+      "album_id": "single_/_tab_transcription",
+      "title": "Single / Tab Transcription",
+      "release_year": 2000,
+      "total_tracks": 2,
+      "parsed_tracks_count": 2,
+      "track_ids": [
+        "dream_theater_dance_of_eternity",
+        "dream_theater_metropolis_part_1_the_miracle_and_the_sleeper"
+      ]
+    }
+  ]
+}

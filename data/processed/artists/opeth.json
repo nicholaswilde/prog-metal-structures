@@ -1,0 +1,23 @@
+{
+  "artist_id": "opeth",
+  "name": "Opeth",
+  "country": "Sweden",
+  "formed_year": 1990,
+  "genres": [
+    "Progressive Death Metal",
+    "Progressive Rock"
+  ],
+  "total_parsed_tracks": 1,
+  "albums": [
+    {
+      "album_id": "ghost_reveries_(2005)",
+      "title": "Ghost Reveries (2005)",
+      "release_year": 2000,
+      "total_tracks": 1,
+      "parsed_tracks_count": 1,
+      "track_ids": [
+        "opeth_ghost_of_perdition"
+      ]
+    }
+  ]
+}

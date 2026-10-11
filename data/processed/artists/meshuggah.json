@@ -1,0 +1,25 @@
+{
+  "artist_id": "meshuggah",
+  "name": "Meshuggah",
+  "country": "Sweden",
+  "formed_year": 1987,
+  "genres": [
+    "Extreme Metal",
+    "Djent",
+    "Progressive Metal",
+    "Polymetric Metal"
+  ],
+  "total_parsed_tracks": 1,
+  "albums": [
+    {
+      "album_id": "destroy,_erase,_improve",
+      "title": "Destroy, Erase, Improve",
+      "release_year": 2000,
+      "total_tracks": 1,
+      "parsed_tracks_count": 1,
+      "track_ids": [
+        "meshuggah_future_breed_machine"
+      ]
+    }
+  ]
+}

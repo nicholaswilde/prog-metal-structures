@@ -1,0 +1,24 @@
+{
+  "artist_id": "tool",
+  "name": "Tool",
+  "country": "United States",
+  "formed_year": 1990,
+  "genres": [
+    "Progressive Metal",
+    "Alternative Metal",
+    "Art Rock"
+  ],
+  "total_parsed_tracks": 1,
+  "albums": [
+    {
+      "album_id": "lateralus",
+      "title": "Lateralus",
+      "release_year": 2001,
+      "total_tracks": 13,
+      "parsed_tracks_count": 1,
+      "track_ids": [
+        "tool_schism"
+      ]
+    }
+  ]
+}

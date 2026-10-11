@@ -1,0 +1,139 @@
+{
+  "track_id": "tool_schism",
+  "title": "Schism",
+  "artist": "Tool",
+  "album": "Lateralus",
+  "source_file": "tool-schism.gp3",
+  "source_format": "gp3",
+  "total_measures": 25,
+  "default_tempo_bpm": 120.0,
+  "default_time_signature": "6/4",
+  "sections": [],
+  "measures": [
+    {
+      "measure_number": 1,
+      "time_signature": "6/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 2,
+      "time_signature": "6/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 3,
+      "time_signature": "6/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 4,
+      "time_signature": "6/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 5,
+      "time_signature": "6/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 6,
+      "time_signature": "6/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 7,
+      "time_signature": "6/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 8,
+      "time_signature": "6/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 9,
+      "time_signature": "6/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 10,
+      "time_signature": "6/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 11,
+      "time_signature": "6/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 12,
+      "time_signature": "6/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 13,
+      "time_signature": "6/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 14,
+      "time_signature": "6/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 15,
+      "time_signature": "6/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 16,
+      "time_signature": "6/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 17,
+      "time_signature": "6/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 18,
+      "time_signature": "6/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 19,
+      "time_signature": "6/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 20,
+      "time_signature": "6/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 21,
+      "time_signature": "6/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 22,
+      "time_signature": "6/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 23,
+      "time_signature": "6/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 24,
+      "time_signature": "6/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 25,
+      "time_signature": "6/4",
+      "tempo_bpm": 120.0
+    }
+  ]
+}

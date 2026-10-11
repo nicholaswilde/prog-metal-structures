@@ -1,0 +1,124 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/nicholaswilde/prog-metal-structures/main/schemas/track_architecture.json",
+  "title": "TrackArchitecture",
+  "description": "Schema mapping structural metadata, meter shifts, tempos, and sections in progressive metal tracks.",
+  "type": "object",
+  "required": [
+    "track_id",
+    "title",
+    "artist",
+    "measures"
+  ],
+  "properties": {
+    "track_id": {
+      "type": "string",
+      "description": "Unique identifier for the track (UUID or slug)"
+    },
+    "title": {
+      "type": "string",
+      "description": "Track title"
+    },
+    "artist": {
+      "type": "string",
+      "description": "Artist or band name"
+    },
+    "album": {
+      "type": "string",
+      "description": "Album title"
+    },
+    "year": {
+      "type": "integer",
+      "minimum": 1900,
+      "description": "Release year"
+    },
+    "source_file": {
+      "type": "string",
+      "description": "Source file name or path (Guitar Pro or MIDI)"
+    },
+    "source_format": {
+      "type": "string",
+      "enum": ["gp3", "gp4", "gp5", "gpx", "gp", "midi", "mid"],
+      "description": "Original file format"
+    },
+    "total_measures": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Total measure count in track"
+    },
+    "default_tempo_bpm": {
+      "type": "number",
+      "exclusiveMinimum": 0,
+      "description": "Initial tempo in beats per minute"
+    },
+    "default_time_signature": {
+      "type": "string",
+      "pattern": "^[0-9]+/[0-9]+$",
+      "description": "Initial time signature fraction (e.g. 4/4, 7/8)"
+    },
+    "sections": {
+      "type": "array",
+      "description": "High-level musical section definitions",
+      "items": {
+        "type": "object",
+        "required": [
+          "label",
+          "start_measure"
+        ],
+        "properties": {
+          "label": {
+            "type": "string",
+            "description": "Section name (e.g. Intro, Verse 1, Pre-Chorus, Instrumental Break, Solo, Outro)"
+          },
+          "start_measure": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "1-indexed starting measure"
+          },
+          "end_measure": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "1-indexed ending measure"
+          }
+        }
+      }
+    },
+    "measures": {
+      "type": "array",
+      "description": "Measure-by-measure structural architecture",
+      "items": {
+        "type": "object",
+        "required": [
+          "measure_number",
+          "time_signature",
+          "tempo_bpm"
+        ],
+        "properties": {
+          "measure_number": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "1-indexed measure sequence number"
+          },
+          "time_signature": {
+            "type": "string",
+            "pattern": "^[0-9]+/[0-9]+$",
+            "description": "Time signature fraction (e.g. 4/4, 7/8, 13/8, 19/16)"
+          },
+          "tempo_bpm": {
+            "type": "number",
+            "exclusiveMinimum": 0,
+            "description": "Tempo in beats per minute"
+          },
+          "section_label": {
+            "type": "string",
+            "description": "Active or newly starting section label"
+          },
+          "notes": {
+            "type": "string",
+            "description": "Structural annotations (e.g., metric modulation, odd accent pattern)"
+          }
+        }
+      }
+    }
+  }
+}
