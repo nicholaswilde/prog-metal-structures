@@ -125,12 +125,20 @@ DISCOGRAPHY: Dict[str, Dict[str, Any]] = {
     "genres": ["Extreme Metal", "Djent", "Progressive Metal", "Polymetric Metal"],
     "albums": {
       "Destroy Erase Improve": {"release_year": 1995, "total_tracks": 10},
+      "Chaosphere": {"release_year": 1998, "total_tracks": 8},
       "Nothing": {"release_year": 2002, "total_tracks": 10},
       "obZen": {"release_year": 2008, "total_tracks": 9},
     },
     "track_map": {
       "future breed machine": ("Destroy Erase Improve", 1995),
+      "new millennium cyanide christ": ("Chaosphere", 1998),
+      "corridor of chameleons": ("Chaosphere", 1998),
+      "sane": ("Chaosphere", 1998),
+      "the exquisite machinery of torture": ("Chaosphere", 1998),
+      "stengah": ("Nothing", 2002),
       "rational gaze": ("Nothing", 2002),
+      "perpetual black second": ("Nothing", 2002),
+      "spasm": ("Nothing", 2002),
     },
   },
   "haken": {
@@ -157,7 +165,14 @@ DISCOGRAPHY: Dict[str, Dict[str, Any]] = {
       "The Joy of Motion": {"release_year": 2014, "total_tracks": 12},
     },
     "track_map": {
+      "tempting time": ("Animals as Leaders", 2009),
+      "cafo": ("Animals as Leaders", 2009),
+      "behaving badly": ("Animals as Leaders", 2009),
+      "song of solomon": ("Animals as Leaders", 2009),
+      "weightless": ("Weightless", 2011),
       "an infinite regression": ("Weightless", 2011),
+      "the woven web": ("The Joy of Motion", 2014),
+      "kascade": ("The Joy of Motion", 2014),
     },
   },
   "between_the_buried_and_me": {
@@ -166,11 +181,18 @@ DISCOGRAPHY: Dict[str, Dict[str, Any]] = {
     "formed_year": 2000,
     "genres": ["Progressive Metal", "Technical Death Metal", "Mathcore"],
     "albums": {
+      "Between the Buried and Me": {"release_year": 2002, "total_tracks": 10},
+      "The Silent Circus": {"release_year": 2003, "total_tracks": 10},
       "Alaska": {"release_year": 2005, "total_tracks": 11},
       "Colors": {"release_year": 2007, "total_tracks": 8},
+      "The Parallax II: Future Sequence": {"release_year": 2012, "total_tracks": 12},
     },
     "track_map": {
+      "colorblind": ("Between the Buried and Me", 2002),
+      "aesthetic": ("The Silent Circus", 2003),
+      "camilla rhodes": ("The Silent Circus", 2003),
       "alaska": ("Alaska", 2005),
+      "melting city": ("The Parallax II: Future Sequence", 2012),
     },
   },
   "epica": {

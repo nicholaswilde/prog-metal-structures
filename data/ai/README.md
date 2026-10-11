@@ -6,7 +6,7 @@ This directory contains curated machine learning datasets formatted for Large La
 
 ## Files in this Dataset
 
-### 1. `prog_metal_sft.jsonl` (168 conversation pairs)
+### 1. `prog_metal_sft.jsonl` (212 conversation pairs)
 - **Format**: JSON Lines, ChatML / OpenAI message format (`messages`).
 - **Use Case**: Supervised Fine-Tuning (SFT) for music analysis, meter prediction, and metric complexity reasoning.
 - **Record Structure**:
@@ -22,7 +22,7 @@ This directory contains curated machine learning datasets formatted for Large La
   }
   ```
 
-### 2. `prog_metal_knowledge_corpus.jsonl` (69 documents)
+### 2. `prog_metal_knowledge_corpus.jsonl` (87 documents)
 - **Format**: JSON Lines, structured markdown documents with metadata.
 - **Use Case**: Vector database ingestion (Chroma, Qdrant, Pinecone), BM25 hybrid search, and semantic RAG retrieval.
 - **Record Structure**:
@@ -39,7 +39,7 @@ This directory contains curated machine learning datasets formatted for Large La
   }
   ```
 
-### 3. `prog_metal_benchmark_suite.jsonl` (276 evaluation questions)
+### 3. `prog_metal_benchmark_suite.jsonl` (348 evaluation questions)
 - **Format**: JSON Lines, question and ground-truth answer pairs with evaluation strategy.
 - **Use Case**: Evaluating model domain understanding, factual recall of meter progressions, and hallucination rates.
 - **Record Structure**:

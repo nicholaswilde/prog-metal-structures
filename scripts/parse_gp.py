@@ -31,37 +31,58 @@ def parse_gp_file(file_path: Path) -> Dict[str, Any]:
 
   song = guitarpro.parse(str(file_path))
 
-  raw_title = song.title.strip() if getattr(song, "title", None) else ""
-  raw_artist = song.artist.strip() if getattr(song, "artist", None) else ""
+  raw_title = song.title.strip().strip("\"'") if getattr(song, "title", None) else ""
+  raw_artist = song.artist.strip().strip("\"'") if getattr(song, "artist", None) else ""
+
+  # Normalize common title and artist misspellings in tabs
+  if "millenium" in raw_title.lower():
+    raw_title = re.sub(r"millenium", "millennium", raw_title, flags=re.IGNORECASE)
+  if "dream theather" in raw_artist.lower():
+    raw_artist = "Dream Theater"
+  elif raw_artist.lower() in {"tosin abasi", "tosin"}:
+    raw_artist = "Animals as Leaders"
 
   # Fallback to file name stem if artist or title is missing
-  if not raw_artist or raw_artist.lower() in {"unknown", "unknown artist"}:
+  if not raw_artist or raw_artist.lower() in {"unknown", "unknown artist"} or not raw_title:
     stem = file_path.stem
-    # Check known multi-word bands or match first segments
     matched = False
-    for candidate in ["dream-theater", "animals-as-leaders", "between-the-buried-and-me"]:
+    for candidate in [
+      "dream-theater",
+      "dream_theater",
+      "animals-as-leaders",
+      "animals_as_leaders",
+      "between-the-buried-and-me",
+      "between_the_buried_and_me",
+      "meshuggah",
+    ]:
       if stem.startswith(candidate + "-"):
-        raw_artist = candidate.replace("-", " ").title()
-        raw_title = stem[len(candidate) + 1 :].replace("_", " ").title()
+        if not raw_artist or raw_artist.lower() in {"unknown", "unknown artist"}:
+          raw_artist = candidate.replace("-", " ").replace("_", " ").title()
+        if not raw_title:
+          raw_title = stem[len(candidate) + 1 :].replace("_", " ").title()
         matched = True
         break
     if not matched:
       parts = stem.split("-", 1)
       if len(parts) == 2:
-        raw_artist = parts[0].replace("_", " ").title()
-        raw_title = parts[1].replace("_", " ").title()
-      else:
+        if not raw_artist or raw_artist.lower() in {"unknown", "unknown artist"}:
+          raw_artist = parts[0].replace("_", " ").title()
+        if not raw_title:
+          raw_title = parts[1].replace("_", " ").title()
+      elif not raw_artist:
         raw_artist = "Unknown Artist"
 
-  # Normalize common band misspellings in tabs
-  if "dream theather" in raw_artist.lower():
-    raw_artist = "Dream Theater"
+  # Clean leading artist prefix from title (e.g. "Meshuggah - Spasm")
+  if raw_artist and raw_title.lower().startswith(f"{raw_artist.lower()} - "):
+    raw_title = raw_title[len(raw_artist) + 3 :].strip()
 
-  title = raw_title or file_path.stem.replace("_", " ").title()
+  title = (raw_title or file_path.stem.replace("_", " ").title()).strip().strip("\"'")
   artist = raw_artist
   artist_key = slugify(artist)
   canonical_album, canonical_year = lookup_track_metadata(artist_key, title)
-  album = canonical_album or (song.album.strip() if getattr(song, "album", None) else "")
+  album = canonical_album or (
+    song.album.strip().strip("\"'") if getattr(song, "album", None) else ""
+  )
   year = canonical_year
   track_id = f"{artist_key}_{slugify(title)}"
 

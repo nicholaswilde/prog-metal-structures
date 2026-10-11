@@ -8,16 +8,41 @@
     "Djent",
     "Instrumental Rock"
   ],
-  "total_parsed_tracks": 1,
+  "total_parsed_tracks": 8,
   "albums": [
+    {
+      "album_id": "the_joy_of_motion",
+      "title": "The Joy of Motion",
+      "release_year": 2014,
+      "total_tracks": 12,
+      "parsed_tracks_count": 2,
+      "track_ids": [
+        "animals_as_leaders_kascade",
+        "animals_as_leaders_the_woven_web"
+      ]
+    },
     {
       "album_id": "weightless",
       "title": "Weightless",
       "release_year": 2011,
       "total_tracks": 12,
-      "parsed_tracks_count": 1,
+      "parsed_tracks_count": 2,
       "track_ids": [
-        "animals_as_leaders_an_infinite_regression"
+        "animals_as_leaders_an_infinite_regression",
+        "animals_as_leaders_weightless"
+      ]
+    },
+    {
+      "album_id": "animals_as_leaders",
+      "title": "Animals as Leaders",
+      "release_year": 2009,
+      "total_tracks": 12,
+      "parsed_tracks_count": 4,
+      "track_ids": [
+        "animals_as_leaders_tempting_time",
+        "animals_as_leaders_cafo",
+        "animals_as_leaders_behaving_badly",
+        "animals_as_leaders_song_of_solomon"
       ]
     }
   ]

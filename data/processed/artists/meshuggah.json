@@ -9,16 +9,32 @@
     "Progressive Metal",
     "Polymetric Metal"
   ],
-  "total_parsed_tracks": 2,
+  "total_parsed_tracks": 9,
   "albums": [
     {
       "album_id": "nothing",
       "title": "Nothing",
       "release_year": 2002,
       "total_tracks": 10,
-      "parsed_tracks_count": 1,
+      "parsed_tracks_count": 4,
       "track_ids": [
-        "meshuggah_rational_gaze"
+        "meshuggah_rational_gaze",
+        "meshuggah_stengah",
+        "meshuggah_spasm",
+        "meshuggah_perpetual_black_second"
+      ]
+    },
+    {
+      "album_id": "chaosphere",
+      "title": "Chaosphere",
+      "release_year": 1998,
+      "total_tracks": 8,
+      "parsed_tracks_count": 4,
+      "track_ids": [
+        "meshuggah_the_exquisite_machinery_of_torture",
+        "meshuggah_new_millennium_cyanide_christ",
+        "meshuggah_sane",
+        "meshuggah_corridor_of_chameleons"
       ]
     },
     {

@@ -30,6 +30,8 @@ extend-exclude = [
 
 # Band names & tab misspellings
 "theather" = "theather"
+"millenium" = "millenium"
+"Millenium" = "Millenium"
 "Opeth" = "Opeth"
 "Meshuggah" = "Meshuggah"
 "Haken" = "Haken"

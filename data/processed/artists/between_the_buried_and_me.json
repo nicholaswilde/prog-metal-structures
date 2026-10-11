@@ -8,8 +8,39 @@
     "Technical Death Metal",
     "Mathcore"
   ],
-  "total_parsed_tracks": 1,
+  "total_parsed_tracks": 5,
   "albums": [
+    {
+      "album_id": "the_silent_circus",
+      "title": "The Silent Circus",
+      "release_year": 2003,
+      "total_tracks": 10,
+      "parsed_tracks_count": 2,
+      "track_ids": [
+        "between_the_buried_and_me_aesthetic",
+        "between_the_buried_and_me_camilla_rhodes"
+      ]
+    },
+    {
+      "album_id": "the_parallax_ii:_future_sequence",
+      "title": "The Parallax II: Future Sequence",
+      "release_year": 2012,
+      "total_tracks": 12,
+      "parsed_tracks_count": 1,
+      "track_ids": [
+        "between_the_buried_and_me_melting_city_polyrhythm_part"
+      ]
+    },
+    {
+      "album_id": "between_the_buried_and_me",
+      "title": "Between the Buried and Me",
+      "release_year": 2002,
+      "total_tracks": 10,
+      "parsed_tracks_count": 1,
+      "track_ids": [
+        "between_the_buried_and_me_colorblind"
+      ]
+    },
     {
       "album_id": "alaska",
       "title": "Alaska",

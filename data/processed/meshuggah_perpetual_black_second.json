@@ -1,0 +1,571 @@
+{
+  "track_id": "meshuggah_perpetual_black_second",
+  "title": "Perpetual Black Second",
+  "artist": "Meshuggah",
+  "album": "Nothing",
+  "year": 2002,
+  "source_file": "meshuggah-perpetual_black_second.gp4",
+  "source_format": "gp4",
+  "total_measures": 99,
+  "default_tempo_bpm": 120.0,
+  "default_time_signature": "4/4",
+  "sections": [
+    {
+      "label": "Intro",
+      "start_measure": 1,
+      "end_measure": 8
+    },
+    {
+      "label": "PreVerse",
+      "start_measure": 9,
+      "end_measure": 16
+    },
+    {
+      "label": "Verse I",
+      "start_measure": 17,
+      "end_measure": 24
+    },
+    {
+      "label": "Bridge",
+      "start_measure": 25,
+      "end_measure": 32
+    },
+    {
+      "label": "Verse II",
+      "start_measure": 33,
+      "end_measure": 40
+    },
+    {
+      "label": "Post Verse",
+      "start_measure": 41,
+      "end_measure": 48
+    },
+    {
+      "label": "Chorus",
+      "start_measure": 49,
+      "end_measure": 57
+    },
+    {
+      "label": "Solo",
+      "start_measure": 58,
+      "end_measure": 73
+    },
+    {
+      "label": "Verse III",
+      "start_measure": 74,
+      "end_measure": 81
+    },
+    {
+      "label": "Outro",
+      "start_measure": 82,
+      "end_measure": 99
+    }
+  ],
+  "measures": [
+    {
+      "measure_number": 1,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0,
+      "section_label": "Intro"
+    },
+    {
+      "measure_number": 2,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 3,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 4,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 5,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 6,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 7,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 8,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 9,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0,
+      "section_label": "PreVerse"
+    },
+    {
+      "measure_number": 10,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 11,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 12,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 13,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 14,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 15,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 16,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 17,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0,
+      "section_label": "Verse I"
+    },
+    {
+      "measure_number": 18,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 19,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 20,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 21,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 22,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 23,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 24,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 25,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0,
+      "section_label": "Bridge"
+    },
+    {
+      "measure_number": 26,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 27,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 28,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 29,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 30,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 31,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 32,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 33,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0,
+      "section_label": "Verse II"
+    },
+    {
+      "measure_number": 34,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 35,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 36,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 37,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 38,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 39,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 40,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 41,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0,
+      "section_label": "Post Verse"
+    },
+    {
+      "measure_number": 42,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 43,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 44,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 45,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 46,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 47,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 48,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 49,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0,
+      "section_label": "Chorus"
+    },
+    {
+      "measure_number": 50,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 51,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 52,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 53,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 54,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 55,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 56,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 57,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 58,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0,
+      "section_label": "Solo"
+    },
+    {
+      "measure_number": 59,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 60,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 61,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 62,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 63,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 64,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 65,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 66,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 67,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 68,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 69,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 70,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 71,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 72,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 73,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 74,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0,
+      "section_label": "Verse III"
+    },
+    {
+      "measure_number": 75,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 76,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 77,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 78,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 79,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 80,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 81,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 82,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0,
+      "section_label": "Outro"
+    },
+    {
+      "measure_number": 83,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 84,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 85,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 86,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 87,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 88,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 89,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 90,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 91,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 92,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 93,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 94,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 95,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 96,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 97,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 98,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    },
+    {
+      "measure_number": 99,
+      "time_signature": "4/4",
+      "tempo_bpm": 120.0
+    }
+  ]
+}

@@ -286,6 +286,55 @@
     }
   },
   {
+    "track_id": "animals_as_leaders_kascade",
+    "title": "Kascade",
+    "artist": "Animals As Leaders",
+    "total_measures": 141,
+    "unique_meters": 7,
+    "shift_frequency": 0.4357,
+    "metric_entropy": 2.1496,
+    "meter_distribution": {
+      "5/4": 0.4255,
+      "6/4": 0.1418,
+      "15/8": 0.0496,
+      "17/8": 0.0496,
+      "7/4": 0.2695,
+      "2/4": 0.0071,
+      "8/4": 0.0567
+    },
+    "transition_matrix": {
+      "5/4": {
+        "5/4": 0.6333,
+        "6/4": 0.3333,
+        "7/4": 0.0333
+      },
+      "6/4": {
+        "5/4": 0.95,
+        "15/8": 0.05
+      },
+      "15/8": {
+        "17/8": 1.0
+      },
+      "17/8": {
+        "15/8": 0.7143,
+        "5/4": 0.2857
+      },
+      "7/4": {
+        "7/4": 0.9459,
+        "2/4": 0.027,
+        "8/4": 0.027
+      },
+      "2/4": {
+        "8/4": 1.0
+      },
+      "8/4": {
+        "8/4": 0.75,
+        "7/4": 0.125,
+        "15/8": 0.125
+      }
+    }
+  },
+  {
     "track_id": "tool_ticks_and_leeches",
     "title": "Ticks And Leeches",
     "artist": "Tool",
@@ -505,6 +554,66 @@
       "3/4": {
         "4/4": 0.0258,
         "3/4": 0.9742
+      }
+    }
+  },
+  {
+    "track_id": "between_the_buried_and_me_aesthetic",
+    "title": "Aesthetic",
+    "artist": "Between The Buried And Me",
+    "total_measures": 121,
+    "unique_meters": 9,
+    "shift_frequency": 0.45,
+    "metric_entropy": 1.9002,
+    "meter_distribution": {
+      "2/4": 0.0331,
+      "4/4": 0.4876,
+      "5/4": 0.0331,
+      "3/4": 0.3223,
+      "1/4": 0.0083,
+      "9/16": 0.0083,
+      "31/32": 0.0909,
+      "6/4": 0.0083,
+      "17/16": 0.0083
+    },
+    "transition_matrix": {
+      "2/4": {
+        "4/4": 0.5,
+        "3/4": 0.5
+      },
+      "4/4": {
+        "4/4": 0.5862,
+        "5/4": 0.0517,
+        "2/4": 0.0517,
+        "1/4": 0.0172,
+        "31/32": 0.1897,
+        "3/4": 0.069,
+        "6/4": 0.0172,
+        "17/16": 0.0172
+      },
+      "5/4": {
+        "4/4": 0.75,
+        "3/4": 0.25
+      },
+      "3/4": {
+        "4/4": 0.1538,
+        "3/4": 0.8205,
+        "5/4": 0.0256
+      },
+      "1/4": {
+        "9/16": 1.0
+      },
+      "9/16": {
+        "4/4": 1.0
+      },
+      "31/32": {
+        "4/4": 1.0
+      },
+      "6/4": {
+        "4/4": 1.0
+      },
+      "17/16": {
+        "4/4": 1.0
       }
     }
   },
@@ -765,6 +874,123 @@
     }
   },
   {
+    "track_id": "between_the_buried_and_me_camilla_rhodes",
+    "title": "Camilla Rhodes",
+    "artist": "Between The Buried And Me",
+    "total_measures": 188,
+    "unique_meters": 10,
+    "shift_frequency": 0.1765,
+    "metric_entropy": 1.0957,
+    "meter_distribution": {
+      "4/4": 0.8404,
+      "7/4": 0.016,
+      "5/4": 0.0372,
+      "6/4": 0.0266,
+      "1/4": 0.0053,
+      "3/4": 0.0053,
+      "18/8": 0.016,
+      "12/8": 0.0319,
+      "6/8": 0.0106,
+      "2/4": 0.0106
+    },
+    "transition_matrix": {
+      "4/4": {
+        "4/4": 0.9299,
+        "7/4": 0.0064,
+        "5/4": 0.0064,
+        "6/4": 0.0255,
+        "1/4": 0.0064,
+        "3/4": 0.0064,
+        "18/8": 0.0064,
+        "2/4": 0.0127
+      },
+      "7/4": {
+        "4/4": 0.3333,
+        "6/8": 0.6667
+      },
+      "5/4": {
+        "5/4": 0.7143,
+        "6/4": 0.1429,
+        "4/4": 0.1429
+      },
+      "6/4": {
+        "4/4": 1.0
+      },
+      "1/4": {
+        "4/4": 1.0
+      },
+      "3/4": {
+        "4/4": 1.0
+      },
+      "18/8": {
+        "12/8": 1.0
+      },
+      "12/8": {
+        "7/4": 0.3333,
+        "12/8": 0.5,
+        "4/4": 0.1667
+      },
+      "6/8": {
+        "18/8": 1.0
+      },
+      "2/4": {
+        "4/4": 0.5,
+        "5/4": 0.5
+      }
+    }
+  },
+  {
+    "track_id": "animals_as_leaders_tempting_time",
+    "title": "Tempting Time",
+    "artist": "Animals As Leaders",
+    "total_measures": 140,
+    "unique_meters": 7,
+    "shift_frequency": 0.3237,
+    "metric_entropy": 2.1516,
+    "meter_distribution": {
+      "4/4": 0.3429,
+      "5/4": 0.1714,
+      "6/4": 0.05,
+      "3/4": 0.0143,
+      "5/8": 0.3286,
+      "7/8": 0.0857,
+      "2/4": 0.0071
+    },
+    "transition_matrix": {
+      "4/4": {
+        "4/4": 0.6667,
+        "5/4": 0.0208,
+        "3/4": 0.0417,
+        "7/8": 0.25,
+        "2/4": 0.0208
+      },
+      "5/4": {
+        "6/4": 0.2609,
+        "5/4": 0.7391
+      },
+      "6/4": {
+        "5/4": 0.7143,
+        "6/4": 0.1429,
+        "4/4": 0.1429
+      },
+      "3/4": {
+        "4/4": 0.5,
+        "5/8": 0.5
+      },
+      "5/8": {
+        "5/8": 0.9565,
+        "4/4": 0.0217,
+        "5/4": 0.0217
+      },
+      "7/8": {
+        "4/4": 1.0
+      },
+      "2/4": {
+        "5/8": 1.0
+      }
+    }
+  },
+  {
     "track_id": "tool_schism",
     "title": "Schism",
     "artist": "Tool",
@@ -778,6 +1004,23 @@
     "transition_matrix": {
       "6/4": {
         "6/4": 1.0
+      }
+    }
+  },
+  {
+    "track_id": "meshuggah_the_exquisite_machinery_of_torture",
+    "title": "The Exquisite Machinery of Torture",
+    "artist": "Meshuggah",
+    "total_measures": 69,
+    "unique_meters": 1,
+    "shift_frequency": 0.0,
+    "metric_entropy": 0.0,
+    "meter_distribution": {
+      "4/4": 1.0
+    },
+    "transition_matrix": {
+      "4/4": {
+        "4/4": 1.0
       }
     }
   },
@@ -945,6 +1188,55 @@
     }
   },
   {
+    "track_id": "animals_as_leaders_cafo",
+    "title": "Cafo",
+    "artist": "Animals as Leaders",
+    "total_measures": 180,
+    "unique_meters": 7,
+    "shift_frequency": 0.3575,
+    "metric_entropy": 1.8001,
+    "meter_distribution": {
+      "8/4": 0.0056,
+      "9/4": 0.3444,
+      "4/4": 0.4833,
+      "5/4": 0.0778,
+      "3/4": 0.0444,
+      "6/4": 0.0333,
+      "2/4": 0.0111
+    },
+    "transition_matrix": {
+      "8/4": {
+        "9/4": 1.0
+      },
+      "9/4": {
+        "9/4": 0.9508,
+        "4/4": 0.0492
+      },
+      "4/4": {
+        "4/4": 0.6552,
+        "5/4": 0.1609,
+        "3/4": 0.092,
+        "6/4": 0.069,
+        "2/4": 0.023
+      },
+      "5/4": {
+        "4/4": 1.0
+      },
+      "3/4": {
+        "4/4": 0.875,
+        "9/4": 0.125
+      },
+      "6/4": {
+        "4/4": 0.8333,
+        "9/4": 0.1667
+      },
+      "2/4": {
+        "4/4": 0.5,
+        "9/4": 0.5
+      }
+    }
+  },
+  {
     "track_id": "dream_theater_stream_of_consciousness",
     "title": "Stream of Consciousness",
     "artist": "Dream Theater",
@@ -996,6 +1288,107 @@
     }
   },
   {
+    "track_id": "animals_as_leaders_behaving_badly",
+    "title": "Behaving Badly",
+    "artist": "Animals As Leaders",
+    "total_measures": 118,
+    "unique_meters": 8,
+    "shift_frequency": 0.4872,
+    "metric_entropy": 2.3688,
+    "meter_distribution": {
+      "6/4": 0.0085,
+      "7/8": 0.339,
+      "8/8": 0.1864,
+      "6/8": 0.0847,
+      "2/4": 0.0847,
+      "9/8": 0.2542,
+      "15/16": 0.0339,
+      "5/8": 0.0085
+    },
+    "transition_matrix": {
+      "6/4": {
+        "7/8": 1.0
+      },
+      "7/8": {
+        "7/8": 0.875,
+        "8/8": 0.075,
+        "9/8": 0.05
+      },
+      "8/8": {
+        "7/8": 0.0455,
+        "6/8": 0.4545,
+        "2/4": 0.4545,
+        "5/8": 0.0455
+      },
+      "6/8": {
+        "8/8": 1.0
+      },
+      "2/4": {
+        "8/8": 0.8,
+        "7/8": 0.2
+      },
+      "9/8": {
+        "9/8": 0.8621,
+        "15/16": 0.1379
+      },
+      "15/16": {
+        "9/8": 0.75,
+        "8/8": 0.25
+      },
+      "5/8": {
+        "7/8": 1.0
+      }
+    }
+  },
+  {
+    "track_id": "animals_as_leaders_the_woven_web",
+    "title": "The Woven Web",
+    "artist": "Animals As Leaders",
+    "total_measures": 122,
+    "unique_meters": 7,
+    "shift_frequency": 0.2727,
+    "metric_entropy": 1.7462,
+    "meter_distribution": {
+      "6/4": 0.0082,
+      "7/4": 0.0164,
+      "8/4": 0.0082,
+      "9/8": 0.0984,
+      "7/8": 0.1311,
+      "4/4": 0.6066,
+      "3/4": 0.1311
+    },
+    "transition_matrix": {
+      "6/4": {
+        "7/4": 1.0
+      },
+      "7/4": {
+        "8/4": 0.5,
+        "9/8": 0.5
+      },
+      "8/4": {
+        "7/4": 1.0
+      },
+      "9/8": {
+        "9/8": 0.5,
+        "7/8": 0.5
+      },
+      "7/8": {
+        "4/4": 0.5,
+        "7/8": 0.5
+      },
+      "4/4": {
+        "9/8": 0.0685,
+        "3/4": 0.0548,
+        "4/4": 0.8493,
+        "7/8": 0.0274
+      },
+      "3/4": {
+        "3/4": 0.75,
+        "4/4": 0.25
+      }
+    }
+  },
+  {
     "track_id": "opeth_the_moor",
     "title": "The Moor",
     "artist": "Opeth",
@@ -1019,6 +1412,54 @@
       },
       "6/8": {
         "6/4": 1.0
+      }
+    }
+  },
+  {
+    "track_id": "animals_as_leaders_weightless",
+    "title": "Weightless",
+    "artist": "Animals As Leaders",
+    "total_measures": 127,
+    "unique_meters": 7,
+    "shift_frequency": 0.119,
+    "metric_entropy": 1.5465,
+    "meter_distribution": {
+      "5/4": 0.5118,
+      "5/8": 0.0315,
+      "4/4": 0.3937,
+      "11/8": 0.0236,
+      "9/8": 0.0236,
+      "7/16": 0.0079,
+      "17/16": 0.0079
+    },
+    "transition_matrix": {
+      "5/4": {
+        "5/4": 0.9231,
+        "5/8": 0.0154,
+        "11/8": 0.0308,
+        "7/16": 0.0154,
+        "4/4": 0.0154
+      },
+      "5/8": {
+        "5/8": 0.75,
+        "4/4": 0.25
+      },
+      "4/4": {
+        "5/4": 0.0204,
+        "4/4": 0.9796
+      },
+      "11/8": {
+        "9/8": 1.0
+      },
+      "9/8": {
+        "5/4": 0.6667,
+        "11/8": 0.3333
+      },
+      "7/16": {
+        "17/16": 1.0
+      },
+      "17/16": {
+        "5/4": 1.0
       }
     }
   },
@@ -1127,6 +1568,23 @@
       "8/8": {
         "8/8": 0.5,
         "6/8": 0.5
+      }
+    }
+  },
+  {
+    "track_id": "meshuggah_stengah",
+    "title": "Stengah",
+    "artist": "Meshuggah",
+    "total_measures": 168,
+    "unique_meters": 1,
+    "shift_frequency": 0.0,
+    "metric_entropy": 0.0,
+    "meter_distribution": {
+      "4/4": 1.0
+    },
+    "transition_matrix": {
+      "4/4": {
+        "4/4": 1.0
       }
     }
   },
@@ -1296,7 +1754,7 @@
   },
   {
     "track_id": "dream_theater_metropolis_part_1_the_miracle_and_the_sleeper",
-    "title": "Metropolis Part 1 The Miracle And The Sleeper",
+    "title": "Metropolis Part 1 (The Miracle And the Sleeper)",
     "artist": "Dream Theater",
     "total_measures": 305,
     "unique_meters": 11,
@@ -1448,6 +1906,23 @@
     }
   },
   {
+    "track_id": "meshuggah_new_millennium_cyanide_christ",
+    "title": "New millennium Cyanide Christ",
+    "artist": "Meshuggah",
+    "total_measures": 109,
+    "unique_meters": 1,
+    "shift_frequency": 0.0,
+    "metric_entropy": 0.0,
+    "meter_distribution": {
+      "4/4": 1.0
+    },
+    "transition_matrix": {
+      "4/4": {
+        "4/4": 1.0
+      }
+    }
+  },
+  {
     "track_id": "epica_requiem_for_the_indifferent",
     "title": "Requiem for the Indifferent",
     "artist": "Epica",
@@ -1482,6 +1957,45 @@
       },
       "6/4": {
         "5/4": 1.0
+      }
+    }
+  },
+  {
+    "track_id": "meshuggah_spasm",
+    "title": "Spasm",
+    "artist": "Meshuggah",
+    "total_measures": 150,
+    "unique_meters": 2,
+    "shift_frequency": 0.1477,
+    "metric_entropy": 0.3782,
+    "meter_distribution": {
+      "4/4": 0.9267,
+      "5/4": 0.0733
+    },
+    "transition_matrix": {
+      "4/4": {
+        "4/4": 0.9203,
+        "5/4": 0.0797
+      },
+      "5/4": {
+        "4/4": 1.0
+      }
+    }
+  },
+  {
+    "track_id": "meshuggah_perpetual_black_second",
+    "title": "Perpetual Black Second",
+    "artist": "Meshuggah",
+    "total_measures": 99,
+    "unique_meters": 1,
+    "shift_frequency": 0.0,
+    "metric_entropy": 0.0,
+    "meter_distribution": {
+      "4/4": 1.0
+    },
+    "transition_matrix": {
+      "4/4": {
+        "4/4": 1.0
       }
     }
   },
@@ -1704,6 +2218,38 @@
     }
   },
   {
+    "track_id": "meshuggah_sane",
+    "title": "Sane",
+    "artist": "Meshuggah",
+    "total_measures": 76,
+    "unique_meters": 4,
+    "shift_frequency": 0.0667,
+    "metric_entropy": 1.087,
+    "meter_distribution": {
+      "4/4": 0.6579,
+      "2/4": 0.0132,
+      "7/8": 0.3158,
+      "9/8": 0.0132
+    },
+    "transition_matrix": {
+      "4/4": {
+        "4/4": 0.9592,
+        "2/4": 0.0204,
+        "7/8": 0.0204
+      },
+      "2/4": {
+        "4/4": 1.0
+      },
+      "7/8": {
+        "7/8": 0.9583,
+        "9/8": 0.0417
+      },
+      "9/8": {
+        "4/4": 1.0
+      }
+    }
+  },
+  {
     "track_id": "opeth_ghost_of_perdition",
     "title": "Ghost of Perdition",
     "artist": "Opeth",
@@ -1751,6 +2297,60 @@
       "4/4": {
         "4/4": 0.9978,
         "6/4": 0.0022
+      }
+    }
+  },
+  {
+    "track_id": "animals_as_leaders_song_of_solomon",
+    "title": "Song of Solomon",
+    "artist": "Animals as Leaders",
+    "total_measures": 160,
+    "unique_meters": 8,
+    "shift_frequency": 0.3899,
+    "metric_entropy": 1.3059,
+    "meter_distribution": {
+      "4/4": 0.7688,
+      "3/4": 0.0813,
+      "15/16": 0.0063,
+      "7/8": 0.0063,
+      "3/8": 0.0063,
+      "6/4": 0.0563,
+      "5/4": 0.05,
+      "2/4": 0.025
+    },
+    "transition_matrix": {
+      "4/4": {
+        "4/4": 0.7705,
+        "3/4": 0.1066,
+        "15/16": 0.0082,
+        "3/8": 0.0082,
+        "6/4": 0.041,
+        "5/4": 0.0656
+      },
+      "3/4": {
+        "4/4": 0.8462,
+        "6/4": 0.0769,
+        "2/4": 0.0769
+      },
+      "15/16": {
+        "7/8": 1.0
+      },
+      "7/8": {
+        "4/4": 1.0
+      },
+      "3/8": {
+        "4/4": 1.0
+      },
+      "6/4": {
+        "4/4": 0.3333,
+        "2/4": 0.3333,
+        "6/4": 0.3333
+      },
+      "5/4": {
+        "4/4": 1.0
+      },
+      "2/4": {
+        "4/4": 1.0
       }
     }
   },
@@ -1807,10 +2407,49 @@
     }
   },
   {
+    "track_id": "between_the_buried_and_me_melting_city_polyrhythm_part",
+    "title": "Melting City (Polyrhythm Part)",
+    "artist": "Between the Buried and Me",
+    "total_measures": 51,
+    "unique_meters": 2,
+    "shift_frequency": 0.3,
+    "metric_entropy": 0.6268,
+    "meter_distribution": {
+      "5/4": 0.8431,
+      "2/4": 0.1569
+    },
+    "transition_matrix": {
+      "5/4": {
+        "5/4": 0.814,
+        "2/4": 0.186
+      },
+      "2/4": {
+        "5/4": 1.0
+      }
+    }
+  },
+  {
     "track_id": "tool_reflection",
     "title": "Reflection",
     "artist": "Tool",
     "total_measures": 246,
+    "unique_meters": 1,
+    "shift_frequency": 0.0,
+    "metric_entropy": 0.0,
+    "meter_distribution": {
+      "4/4": 1.0
+    },
+    "transition_matrix": {
+      "4/4": {
+        "4/4": 1.0
+      }
+    }
+  },
+  {
+    "track_id": "between_the_buried_and_me_colorblind",
+    "title": "Colorblind",
+    "artist": "Between The Buried And Me",
+    "total_measures": 94,
     "unique_meters": 1,
     "shift_frequency": 0.0,
     "metric_entropy": 0.0,
@@ -2082,6 +2721,23 @@
       "9/8": {
         "3/4": 1.0
       },
+      "4/4": {
+        "4/4": 1.0
+      }
+    }
+  },
+  {
+    "track_id": "meshuggah_corridor_of_chameleons",
+    "title": "Corridor of Chameleons",
+    "artist": "Meshuggah",
+    "total_measures": 84,
+    "unique_meters": 1,
+    "shift_frequency": 0.0,
+    "metric_entropy": 0.0,
+    "meter_distribution": {
+      "4/4": 1.0
+    },
+    "transition_matrix": {
       "4/4": {
         "4/4": 1.0
       }
