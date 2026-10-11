@@ -33,22 +33,36 @@ prog-metal-structures/
 │   ├── raw/
 │   │   ├── guitar_pro/       # Raw .gp3, .gp4, .gp5 files
 │   │   └── midi/             # Raw .mid, .midi files
-│   └── processed/            # Processed datasets
-│       ├── *.json            # Normalized JSON track architectures
-│       ├── artists/          # Artist discography metadata
-│       ├── analysis/         # Metric complexity & transition matrices
-│       ├── prog_metal.db     # Unified relational SQLite database
-│       ├── tracks.parquet    # Columnar track metadata table
-│       └── measures.parquet  # Columnar measure-level sequences
+│   ├── processed/            # Processed datasets
+│   │   ├── *.json            # Normalized JSON track architectures
+│   │   ├── artists/          # Artist discography metadata
+│   │   ├── analysis/         # Metric complexity & transition matrices
+│   │   ├── prog_metal.db     # Unified relational SQLite database
+│   │   ├── tracks.parquet    # Columnar track metadata table
+│   │   └── measures.parquet  # Columnar measure-level sequences
+│   └── ai/                   # AI training corpora & evaluation suite
+│       ├── prog_metal_sft.jsonl               # ChatML SFT pairs (122 pairs)
+│       ├── prog_metal_knowledge_corpus.jsonl  # RAG markdown documents (50 docs)
+│       └── prog_metal_benchmark_suite.jsonl   # Evaluation questions (200 questions)
 ├── schemas/
 │   ├── track_architecture.json  # Schema for measures, meters, tempos, sections
 │   └── artist_metadata.json     # Schema for discography and artist metadata
 ├── scripts/
+│   ├── export_ai.py          # Exporter for AI training corpora & benchmark suite
 │   ├── export_datasets.py    # Exporter for SQLite (prog_metal.db) & Parquet
 │   ├── parse_gp.py           # Ingestion for Guitar Pro tabs
 │   └── parse_midi.py         # Ingestion for MIDI sequences
 └── README.md
 ```
+
+---
+
+## AI Training Corpora & Benchmarks (`data/ai/`)
+
+- **Instruction Tuning (`data/ai/prog_metal_sft.jsonl`)**: 122 ChatML conversation message pairs (`messages`) for instruction fine-tuning on meter progressions, metric complexity, and structural section boundaries.
+- **RAG Knowledge Corpus (`data/ai/prog_metal_knowledge_corpus.jsonl`)**: 50 structured narrative documents with rich metadata for vector embedding and hybrid retrieval.
+- **Benchmark Suite (`data/ai/prog_metal_benchmark_suite.jsonl`)**: 200 evaluation benchmark questions with verified golden answers for evaluating music theory comprehension and factual recall.
+
 
 ---
 

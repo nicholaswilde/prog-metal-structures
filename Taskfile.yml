@@ -134,9 +134,11 @@ tasks:
 
   # Multi-Format Exporters
   export:
-    desc: Export datasets to both SQLite and Parquet formats
+    desc: Export datasets to SQLite, Parquet, and AI training corpora
     cmds:
-      - uv run python scripts/export_datasets.py {{.CLI_ARGS}}
+      - task: export:sqlite
+      - task: export:parquet
+      - task: export:ai
 
   export:sqlite:
     desc: Export processed datasets to relational SQLite database (data/processed/prog_metal.db)
@@ -147,4 +149,10 @@ tasks:
     desc: Export processed datasets to columnar Parquet tables (tracks.parquet, measures.parquet)
     cmds:
       - uv run python scripts/export_datasets.py --parquet {{.CLI_ARGS}}
+
+  export:ai:
+    desc: Export AI training corpora (SFT, RAG knowledge corpus, benchmark suite) to data/ai/
+    cmds:
+      - uv run python scripts/export_ai.py {{.CLI_ARGS}}
+
 
