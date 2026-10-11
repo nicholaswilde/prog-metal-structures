@@ -1,0 +1,23 @@
+{
+  "artist_id": "haken",
+  "name": "Haken",
+  "country": "United Kingdom",
+  "formed_year": 2007,
+  "genres": [
+    "Progressive Metal",
+    "Progressive Rock"
+  ],
+  "total_parsed_tracks": 1,
+  "albums": [
+    {
+      "album_id": "the_mountain_(2013)",
+      "title": "The Mountain (2013)",
+      "release_year": 2000,
+      "total_tracks": 1,
+      "parsed_tracks_count": 1,
+      "track_ids": [
+        "haken_atlas_stone"
+      ]
+    }
+  ]
+}

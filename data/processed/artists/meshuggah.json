@@ -9,8 +9,18 @@
     "Progressive Metal",
     "Polymetric Metal"
   ],
-  "total_parsed_tracks": 1,
+  "total_parsed_tracks": 2,
   "albums": [
+    {
+      "album_id": "nothing",
+      "title": "Nothing",
+      "release_year": 2000,
+      "total_tracks": 1,
+      "parsed_tracks_count": 1,
+      "track_ids": [
+        "meshuggah_rational_gaze"
+      ]
+    },
     {
       "album_id": "destroy,_erase,_improve",
       "title": "Destroy, Erase, Improve",

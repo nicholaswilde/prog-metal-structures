@@ -8,7 +8,7 @@
     "Alternative Metal",
     "Art Rock"
   ],
-  "total_parsed_tracks": 1,
+  "total_parsed_tracks": 2,
   "albums": [
     {
       "album_id": "lateralus",
@@ -18,6 +18,16 @@
       "parsed_tracks_count": 1,
       "track_ids": [
         "tool_schism"
+      ]
+    },
+    {
+      "album_id": "single_/_tab_transcription",
+      "title": "Single / Tab Transcription",
+      "release_year": 2000,
+      "total_tracks": 1,
+      "parsed_tracks_count": 1,
+      "track_ids": [
+        "tool_lateralus"
       ]
     }
   ]

@@ -54,6 +54,36 @@ ARTIST_KNOWLEDGE = {
       "Destroy Erase Improve": {"release_year": 1995, "total_tracks": 10},
       "obZen": {"release_year": 2008, "total_tracks": 9}
     }
+  },
+  "haken": {
+    "name": "Haken",
+    "country": "United Kingdom",
+    "formed_year": 2007,
+    "genres": ["Progressive Metal", "Progressive Rock"],
+    "albums": {
+      "The Mountain": {"release_year": 2013, "total_tracks": 9},
+      "Affinity": {"release_year": 2016, "total_tracks": 9}
+    }
+  },
+  "animals_as_leaders": {
+    "name": "Animals as Leaders",
+    "country": "United States",
+    "formed_year": 2007,
+    "genres": ["Progressive Metal", "Djent", "Instrumental Rock"],
+    "albums": {
+      "Weightless": {"release_year": 2011, "total_tracks": 12},
+      "The Joy of Motion": {"release_year": 2014, "total_tracks": 12}
+    }
+  },
+  "between_the_buried_and_me": {
+    "name": "Between the Buried and Me",
+    "country": "United States",
+    "formed_year": 2000,
+    "genres": ["Progressive Metal", "Technical Death Metal", "Mathcore"],
+    "albums": {
+      "Alaska": {"release_year": 2005, "total_tracks": 11},
+      "Colors": {"release_year": 2007, "total_tracks": 8}
+    }
   }
 }
 
@@ -77,6 +107,12 @@ def build_artist_metadata(processed_dir: Path, output_dir: Path) -> List[Path]:
         artist_key = "tool"
       elif "meshuggah" in track.track_id:
         artist_key = "meshuggah"
+      elif "haken" in track.track_id:
+        artist_key = "haken"
+      elif "animals_as_leaders" in track.track_id:
+        artist_key = "animals_as_leaders"
+      elif "between_the_buried_and_me" in track.track_id:
+        artist_key = "between_the_buried_and_me"
 
       tracks_by_artist.setdefault(artist_key, []).append(track)
     except Exception as exc:

@@ -1,0 +1,24 @@
+{
+  "artist_id": "animals_as_leaders",
+  "name": "Animals as Leaders",
+  "country": "United States",
+  "formed_year": 2007,
+  "genres": [
+    "Progressive Metal",
+    "Djent",
+    "Instrumental Rock"
+  ],
+  "total_parsed_tracks": 1,
+  "albums": [
+    {
+      "album_id": "weightless",
+      "title": "Weightless",
+      "release_year": 2011,
+      "total_tracks": 12,
+      "parsed_tracks_count": 1,
+      "track_ids": [
+        "animals_as_leaders_an_infinite_regression"
+      ]
+    }
+  ]
+}

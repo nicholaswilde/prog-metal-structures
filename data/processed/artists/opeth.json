@@ -7,7 +7,7 @@
     "Progressive Death Metal",
     "Progressive Rock"
   ],
-  "total_parsed_tracks": 1,
+  "total_parsed_tracks": 2,
   "albums": [
     {
       "album_id": "ghost_reveries_(2005)",
@@ -17,6 +17,16 @@
       "parsed_tracks_count": 1,
       "track_ids": [
         "opeth_ghost_of_perdition"
+      ]
+    },
+    {
+      "album_id": "blackwater_park",
+      "title": "Blackwater Park",
+      "release_year": 2001,
+      "total_tracks": 8,
+      "parsed_tracks_count": 1,
+      "track_ids": [
+        "opeth_blackwater_park"
       ]
     }
   ]

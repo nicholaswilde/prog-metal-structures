@@ -7,7 +7,7 @@
     "Progressive Metal",
     "Progressive Rock"
   ],
-  "total_parsed_tracks": 2,
+  "total_parsed_tracks": 3,
   "albums": [
     {
       "album_id": "single_/_tab_transcription",
@@ -18,6 +18,16 @@
       "track_ids": [
         "dream_theater_dance_of_eternity",
         "dream_theater_metropolis_part_1_the_miracle_and_the_sleeper"
+      ]
+    },
+    {
+      "album_id": "octavarium",
+      "title": "Octavarium",
+      "release_year": 2000,
+      "total_tracks": 1,
+      "parsed_tracks_count": 1,
+      "track_ids": [
+        "dream_theater_panic_attack"
       ]
     }
   ]
