@@ -1,5 +1,22 @@
 [
   {
+    "track_id": "epica_memento",
+    "title": "Memento",
+    "artist": "Epica",
+    "total_measures": 213,
+    "unique_meters": 1,
+    "shift_frequency": 0.0,
+    "metric_entropy": 0.0,
+    "meter_distribution": {
+      "4/4": 1.0
+    },
+    "transition_matrix": {
+      "4/4": {
+        "4/4": 1.0
+      }
+    }
+  },
+  {
     "track_id": "dream_theater_in_the_name_of_god",
     "title": "In The Name Of God",
     "artist": "Dream Theater",
@@ -357,6 +374,23 @@
     "transition_matrix": {
       "6/4": {
         "6/4": 1.0
+      }
+    }
+  },
+  {
+    "track_id": "epica_outrospect",
+    "title": "Outrospect",
+    "artist": "Epica",
+    "total_measures": 93,
+    "unique_meters": 1,
+    "shift_frequency": 0.0,
+    "metric_entropy": 0.0,
+    "meter_distribution": {
+      "4/4": 1.0
+    },
+    "transition_matrix": {
+      "4/4": {
+        "4/4": 1.0
       }
     }
   },
@@ -1127,6 +1161,40 @@
       "4/4": {
         "4/4": 0.9167,
         "12/8": 0.0833
+      }
+    }
+  },
+  {
+    "track_id": "epica_instrospect",
+    "title": "Instrospect",
+    "artist": "Epica",
+    "total_measures": 81,
+    "unique_meters": 1,
+    "shift_frequency": 0.0,
+    "metric_entropy": 0.0,
+    "meter_distribution": {
+      "4/4": 1.0
+    },
+    "transition_matrix": {
+      "4/4": {
+        "4/4": 1.0
+      }
+    }
+  },
+  {
+    "track_id": "epica_nostalgia",
+    "title": "Nostalgia",
+    "artist": "Epica",
+    "total_measures": 16,
+    "unique_meters": 1,
+    "shift_frequency": 0.0,
+    "metric_entropy": 0.0,
+    "meter_distribution": {
+      "4/4": 1.0
+    },
+    "transition_matrix": {
+      "4/4": {
+        "4/4": 1.0
       }
     }
   },

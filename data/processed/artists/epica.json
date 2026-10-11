@@ -8,8 +8,18 @@
     "Progressive Metal",
     "Gothic Metal"
   ],
-  "total_parsed_tracks": 9,
+  "total_parsed_tracks": 13,
   "albums": [
+    {
+      "album_id": "the_quantum_enigma",
+      "title": "The Quantum Enigma",
+      "release_year": 2000,
+      "total_tracks": 1,
+      "parsed_tracks_count": 1,
+      "track_ids": [
+        "epica_memento"
+      ]
+    },
     {
       "album_id": "we_will_take_you_with_us",
       "title": "We Will Take You With Us",
@@ -18,6 +28,16 @@
       "parsed_tracks_count": 1,
       "track_ids": [
         "epica_seif_al_din"
+      ]
+    },
+    {
+      "album_id": "single_/_tab_transcription",
+      "title": "Single / Tab Transcription",
+      "release_year": 2000,
+      "total_tracks": 1,
+      "parsed_tracks_count": 1,
+      "track_ids": [
+        "epica_outrospect"
       ]
     },
     {
@@ -79,6 +99,26 @@
       "parsed_tracks_count": 1,
       "track_ids": [
         "epica_the_obsessive_devotion"
+      ]
+    },
+    {
+      "album_id": "retrospect",
+      "title": "Retrospect",
+      "release_year": 2000,
+      "total_tracks": 1,
+      "parsed_tracks_count": 1,
+      "track_ids": [
+        "epica_instrospect"
+      ]
+    },
+    {
+      "album_id": "requien_for_the_indifferent",
+      "title": "Requien For The Indifferent",
+      "release_year": 2000,
+      "total_tracks": 1,
+      "parsed_tracks_count": 1,
+      "track_ids": [
+        "epica_nostalgia"
       ]
     },
     {
