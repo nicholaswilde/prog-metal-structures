@@ -46,6 +46,11 @@ tasks:
     cmds:
       - uv run python scripts/runner.py {{.CLI_ARGS}}
 
+  analyze:
+    desc: Compute metric complexity metrics and Markovian transition matrices
+    cmds:
+      - uv run python scripts/analyze_structure.py {{.CLI_ARGS}}
+
   validate:
     desc: Validate processed datasets against JSON schemas and models
     cmds:
