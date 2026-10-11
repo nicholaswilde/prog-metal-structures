@@ -7,7 +7,7 @@
     "Progressive Metal",
     "Progressive Rock"
   ],
-  "total_parsed_tracks": 7,
+  "total_parsed_tracks": 12,
   "albums": [
     {
       "album_id": "train_of_thought",
@@ -21,16 +21,37 @@
       ]
     },
     {
+      "album_id": "awake",
+      "title": "Awake",
+      "release_year": 2000,
+      "total_tracks": 1,
+      "parsed_tracks_count": 1,
+      "track_ids": [
+        "dream_theater_erotomania_2"
+      ]
+    },
+    {
       "album_id": "single_/_tab_transcription",
       "title": "Single / Tab Transcription",
       "release_year": 2000,
-      "total_tracks": 4,
-      "parsed_tracks_count": 4,
+      "total_tracks": 5,
+      "parsed_tracks_count": 5,
       "track_ids": [
         "dream_theater_a_change_of_seasons",
         "dream_theater_dance_of_eternity",
+        "dream_theater_fatal_tragedy_2",
         "dream_theater_metropolis_part_1_the_miracle_and_the_sleeper",
         "dream_theater_pull_me_under_2"
+      ]
+    },
+    {
+      "album_id": "metropolis_pt.2:_scenes_from_a_memory",
+      "title": "Metropolis PT.2: Scenes From A Memory",
+      "release_year": 2000,
+      "total_tracks": 1,
+      "parsed_tracks_count": 1,
+      "track_ids": [
+        "dream_theater_beyond_this_life"
       ]
     },
     {
@@ -41,6 +62,26 @@
       "parsed_tracks_count": 1,
       "track_ids": [
         "dream_theater_panic_attack"
+      ]
+    },
+    {
+      "album_id": "scenes_from_a_memory",
+      "title": "Scenes From A Memory",
+      "release_year": 2000,
+      "total_tracks": 1,
+      "parsed_tracks_count": 1,
+      "track_ids": [
+        "dream_theater_scenes_from_a_memory"
+      ]
+    },
+    {
+      "album_id": "systematic_chaos",
+      "title": "Systematic Chaos",
+      "release_year": 2000,
+      "total_tracks": 1,
+      "parsed_tracks_count": 1,
+      "track_ids": [
+        "dream_theater_constant_motion"
       ]
     }
   ]
