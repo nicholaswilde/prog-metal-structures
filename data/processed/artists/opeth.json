@@ -7,17 +7,18 @@
     "Progressive Death Metal",
     "Progressive Rock"
   ],
-  "total_parsed_tracks": 7,
+  "total_parsed_tracks": 12,
   "albums": [
     {
       "album_id": "blackwater_park",
       "title": "Blackwater Park",
       "release_year": 2001,
       "total_tracks": 8,
-      "parsed_tracks_count": 3,
+      "parsed_tracks_count": 4,
       "track_ids": [
         "opeth_bleak",
         "opeth_the_drapery_falls",
+        "opeth_the_leper_affinity",
         "opeth_blackwater_park"
       ]
     },
@@ -25,10 +26,21 @@
       "album_id": "deliverance",
       "title": "Deliverance",
       "release_year": 2000,
+      "total_tracks": 2,
+      "parsed_tracks_count": 2,
+      "track_ids": [
+        "opeth_masters_apprentices",
+        "opeth_deliverance"
+      ]
+    },
+    {
+      "album_id": "watershed",
+      "title": "Watershed",
+      "release_year": 2000,
       "total_tracks": 1,
       "parsed_tracks_count": 1,
       "track_ids": [
-        "opeth_deliverance"
+        "opeth_heir_apparent"
       ]
     },
     {
@@ -36,9 +48,10 @@
       "title": "Ghost Reveries",
       "release_year": 2005,
       "total_tracks": 8,
-      "parsed_tracks_count": 2,
+      "parsed_tracks_count": 3,
       "track_ids": [
         "opeth_harlequin_forest",
+        "opeth_the_baying_of_the_hounds",
         "opeth_the_grand_conjuration"
       ]
     },
@@ -50,6 +63,16 @@
       "parsed_tracks_count": 1,
       "track_ids": [
         "opeth_ghost_of_perdition"
+      ]
+    },
+    {
+      "album_id": "my_arms,_your_hearse",
+      "title": "My arms, your hearse",
+      "release_year": 2000,
+      "total_tracks": 1,
+      "parsed_tracks_count": 1,
+      "track_ids": [
+        "opeth_demon_of_the_fall"
       ]
     }
   ]
