@@ -166,5 +166,27 @@ tasks:
     cmds:
       - uv run python scripts/audit_gaps.py --update-docs {{.CLI_ARGS}}
 
+  # Dataset Expansion & Pipeline Orchestration
+  pipeline:sync:
+    desc: Run end-to-end dataset pipeline sync (parse, build, analyze, export, gaps)
+    cmds:
+      - uv run python scripts/expand_dataset.py --sync
+
+  discography:verify:
+    desc: Audit processed tracks to verify all have canonical album and release year mappings
+    cmds:
+      - uv run python scripts/discography.py --verify
+
+  dataset:expand:
+    desc: Automate tab downloading, discography verification, and pipeline sync
+    cmds:
+      - uv run python scripts/expand_dataset.py {{.CLI_ARGS}}
+
+  dataset:inspect:
+    desc: Inspect remote tabs on gprotab.net and check format compatibility (ARTIST="<name>")
+    cmds:
+      - uv run python scripts/expand_dataset.py --inspect --artist "{{.ARTIST}}"
+
+
 
 

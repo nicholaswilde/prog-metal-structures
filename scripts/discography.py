@@ -4,6 +4,7 @@ Maps progressive metal bands, albums, release years, and track assignments.
 Strictly 2-space indentation.
 """
 
+from pathlib import Path
 from typing import Any, Dict, Optional, Tuple
 import re
 
@@ -258,3 +259,88 @@ def lookup_track_metadata(artist_key: str, title: str) -> Tuple[Optional[str], O
       return val
 
   return None, None
+
+
+def verify_discography(
+  processed_dir: Optional[Path] = None,
+) -> Dict[str, Any]:
+  """Audit processed track datasets to verify album and year completeness."""
+  import json
+
+  target_dir = processed_dir or Path("data/processed")
+  track_files = sorted(target_dir.glob("*.json"))
+
+  total = 0
+  complete = 0
+  missing_metadata: list[dict[str, Any]] = []
+
+  for p in track_files:
+    if p.name in {"manifest.json", "index.json"}:
+      continue
+    try:
+      data = json.loads(p.read_text(encoding="utf-8"))
+      if "track_id" not in data:
+        continue
+      total += 1
+      album = data.get("album")
+      year = data.get("year")
+      if album and year:
+        complete += 1
+      else:
+        missing_metadata.append(
+          {
+            "file": p.name,
+            "track_id": data.get("track_id"),
+            "artist": data.get("artist"),
+            "title": data.get("title"),
+            "album": album,
+            "year": year,
+          }
+        )
+    except Exception:
+      continue
+
+  return {
+    "total_tracks": total,
+    "complete_tracks": complete,
+    "missing_count": len(missing_metadata),
+    "missing_tracks": missing_metadata,
+  }
+
+
+def main() -> int:
+  """CLI entrypoint for discography verification."""
+  import argparse
+
+  parser = argparse.ArgumentParser(description="Audit and verify discography completeness.")
+  parser.add_argument(
+    "--verify",
+    action="store_true",
+    help="Verify all processed tracks have canonical album and release year mappings",
+  )
+  parser.add_argument(
+    "--processed-dir",
+    type=Path,
+    default=Path("data/processed"),
+    help="Directory containing processed track JSON files",
+  )
+  args = parser.parse_args()
+
+  report = verify_discography(args.processed_dir)
+  print(f"[*] Verified {report['total_tracks']} tracks: {report['complete_tracks']} complete.")
+  if report["missing_count"] > 0:
+    print(f"[!] Warning: {report['missing_count']} tracks missing album or year metadata:")
+    for item in report["missing_tracks"]:
+      print(
+        f"    - {item['file']}: {item['artist']} - {item['title']} (Album: {item['album']}, Year: {item['year']})"
+      )
+    return 1
+
+  print("[+] All tracks have 100% valid canonical discography metadata.")
+  return 0
+
+
+if __name__ == "__main__":
+  import sys
+
+  sys.exit(main())

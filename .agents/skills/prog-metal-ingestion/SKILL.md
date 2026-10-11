@@ -28,7 +28,19 @@ Runbook for converting raw music transcription files into validated structural d
    ```
    Aggregates ingested track architectures into `data/processed/artists/<artist_id>.json`.
 
-4. **Verify Schema & Model Validation**:
+4. **Verify Discography Completeness**:
+   ```bash
+   task discography:verify
+   ```
+   Verifies that all processed tracks are mapped to canonical albums and release years.
+
+5. **Full Pipeline Synchronization**:
+   To run the entire pipeline end-to-end (parse, build, analyze, export, gaps update):
+   ```bash
+   task pipeline:sync
+   ```
+
+6. **Verify Schema & Model Validation**:
    ```bash
    task test
    ```

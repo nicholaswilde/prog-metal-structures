@@ -11,17 +11,23 @@ Runbook for retrieving musical transcriptions for ingestion.
 
 ## Workflow
 
-1. **Scrape Guitar Pro Tabs (Priority 1)**:
-   Search and download Guitar Pro tabs (.gp3, .gp4, .gp5) from tab repositories:
+1. **Inspect Remote Tab Formats**:
+   Before downloading, verify which tabs are available in compatible formats (`.gp3`, `.gp4`, `.gp5`) vs unsupported (`.gpx`):
    ```bash
-   uv run python scripts/scrape_gp.py --artist "<Artist>" --track "<Track>" --limit 3
+   task dataset:inspect ARTIST="<Artist>"
    ```
-   Or via Taskfile:
+
+2. **Scrape Guitar Pro Tabs (Priority 1)**:
+   Batch download compatible Guitar Pro tabs for specific tracks:
+   ```bash
+   task dataset:expand -- --artist "<Artist>" --tracks "<Track1,Track2>" --download
+   ```
+   Or single-track search via scraper CLI:
    ```bash
    task scrape-gp -- --artist "<Artist>" --track "<Track>" --limit 3
    ```
 
-2. **Scrape MIDI Files (Priority 2 Fallback)**:
+3. **Scrape MIDI Files (Priority 2 Fallback)**:
    If Guitar Pro files are unavailable, retrieve MIDI sequences:
    ```bash
    uv run python scripts/scrape_midi.py --query "<Query>" --limit 3
