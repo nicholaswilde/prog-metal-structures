@@ -7,17 +7,30 @@
     "Progressive Metal",
     "Progressive Rock"
   ],
-  "total_parsed_tracks": 3,
+  "total_parsed_tracks": 7,
   "albums": [
     {
-      "album_id": "single_/_tab_transcription",
-      "title": "Single / Tab Transcription",
+      "album_id": "train_of_thought",
+      "title": "Train of Thought",
       "release_year": 2000,
       "total_tracks": 2,
       "parsed_tracks_count": 2,
       "track_ids": [
+        "dream_theater_in_the_name_of_god",
+        "dream_theater_stream_of_consciousness"
+      ]
+    },
+    {
+      "album_id": "single_/_tab_transcription",
+      "title": "Single / Tab Transcription",
+      "release_year": 2000,
+      "total_tracks": 4,
+      "parsed_tracks_count": 4,
+      "track_ids": [
+        "dream_theater_a_change_of_seasons",
         "dream_theater_dance_of_eternity",
-        "dream_theater_metropolis_part_1_the_miracle_and_the_sleeper"
+        "dream_theater_metropolis_part_1_the_miracle_and_the_sleeper",
+        "dream_theater_pull_me_under_2"
       ]
     },
     {

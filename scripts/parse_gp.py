@@ -49,6 +49,10 @@ def parse_gp_file(file_path: Path) -> Dict[str, Any]:
       else:
         raw_artist = "Unknown Artist"
 
+  # Normalize common band misspellings in tabs
+  if "dream theather" in raw_artist.lower():
+    raw_artist = "Dream Theater"
+
   title = raw_title or file_path.stem.replace("_", " ").title()
   artist = raw_artist
   album = song.album.strip() if getattr(song, "album", None) else ""
