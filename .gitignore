@@ -218,3 +218,17 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# AI agent and editor artifacts
+.agents/*
+!.agents/skills/
+.clinerules/
+.codegraph/
+.cursor/
+.github/copilot-instructions.md
+.opencode/
+.serena/
+.windsurf/
+.scratch/
+scratch/
+
