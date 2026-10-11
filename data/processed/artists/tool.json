@@ -8,20 +8,36 @@
     "Alternative Metal",
     "Art Rock"
   ],
-  "total_parsed_tracks": 5,
+  "total_parsed_tracks": 12,
   "albums": [
     {
       "album_id": "lateralus",
       "title": "Lateralus",
       "release_year": 2001,
       "total_tracks": 13,
-      "parsed_tracks_count": 5,
+      "parsed_tracks_count": 8,
       "track_ids": [
         "tool_ticks_and_leeches",
         "tool_schism",
         "tool_parabol",
         "tool_the_grudge",
-        "tool_lateralus"
+        "tool_reflection",
+        "tool_lateralus",
+        "tool_triad",
+        "tool_disposition"
+      ]
+    },
+    {
+      "album_id": "10,000_days",
+      "title": "10,000 Days",
+      "release_year": 2006,
+      "total_tracks": 11,
+      "parsed_tracks_count": 4,
+      "track_ids": [
+        "tool_rosetta_stoned",
+        "tool_jambi",
+        "tool_vicarious",
+        "tool_the_pot"
       ]
     }
   ]

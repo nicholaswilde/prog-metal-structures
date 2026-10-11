@@ -98,14 +98,20 @@ class GuitarProScraper:
         return None
 
       # Determine filename from Content-Disposition or URL
-      filename = dest_filename
-      if not filename:
-        cd = resp.headers.get("content-disposition", "")
-        match = re.search(r'filename="?([^";]+)"?', cd)
-        if match:
-          filename = match.group(1)
+      cd = resp.headers.get("content-disposition", "")
+      match = re.search(r'filename="?([^";]+)"?', cd)
+      orig_name = match.group(1) if match else tab_url.split("/")[-1]
+      ext = Path(orig_name).suffix.lower()
+      if ext not in {".gp3", ".gp4", ".gp5", ".gpx", ".gp"}:
+        ext = ".gp5"
+
+      if dest_filename:
+        if not Path(dest_filename).suffix:
+          filename = f"{dest_filename}{ext}"
         else:
-          filename = f"{slugify(tab_url.split('/')[-1])}.gp5"
+          filename = dest_filename
+      else:
+        filename = orig_name
 
       dest_path = self.output_dir / filename
       dest_path.write_bytes(resp.content)

@@ -1,8 +1,8 @@
 # Progressive Metal Dataset: Data Gap & Completeness Report
 
-**Overall Discography Coverage**: 22.9%
-**Parsed Tracks**: 58 | **Expected Discography Tracks**: 253
-**Tracked Artists**: 9 | **Tracked Albums**: 26
+**Overall Discography Coverage**: 26.1%
+**Parsed Tracks**: 69 | **Expected Discography Tracks**: 264
+**Tracked Artists**: 9 | **Tracked Albums**: 27
 
 ---
 
@@ -29,11 +29,12 @@
 | Epica | The Divine Conspiracy | 2007 | 3 / 13 | 23.1% | 10 missing |
 | Dream Theater | Images and Words | 1992 | 2 / 8 | 25.0% | 6 missing |
 | Dream Theater | Train of Thought | 2003 | 2 / 7 | 28.6% | 5 missing |
-| Dream Theater | Metropolis Pt. 2: Scenes from a Memory | 1999 | 4 / 12 | 33.3% | 8 missing |
 | Opeth | Deliverance | 2002 | 2 / 6 | 33.3% | 4 missing |
-| Tool | Lateralus | 2001 | 5 / 13 | 38.5% | 8 missing |
+| Tool | 10,000 Days | 2006 | 4 / 11 | 36.4% | 7 missing |
 | Epica | The Phantom Agony | 2003 | 4 / 9 | 44.4% | 5 missing |
 | Opeth | Watershed | 2008 | 4 / 7 | 57.1% | 3 missing |
+| Tool | Lateralus | 2001 | 8 / 13 | 61.5% | 5 missing |
+| Dream Theater | Metropolis Pt. 2: Scenes from a Memory | 1999 | 8 / 12 | 66.7% | 4 missing |
 | Opeth | Blackwater Park | 2001 | 7 / 8 | 87.5% | 1 missing |
 | Opeth | Ghost Reveries | 2005 | 7 / 8 | 87.5% | 1 missing |
 
@@ -43,11 +44,11 @@
 
 | Quality Metric | Tracks Checked | Complete | Missing | Completeness % | Status |
 | :--- | :---: | :---: | :---: | :---: | :--- |
-| **Album Title** | 58 | 58 | 0 | 100.0% | **OK** |
-| **Release Year** | 58 | 58 | 0 | 100.0% | **OK** |
-| **Default Tempo (BPM)** | 58 | 58 | 0 | 100.0% | **OK** |
-| **Formal Section Breakdown** | 58 | 26 | 32 | 44.8% | Backlog Target |
-| **Measure Sequence Data** | 58 | 58 | 0 | 100.0% | **OK** |
+| **Album Title** | 69 | 69 | 0 | 100.0% | **OK** |
+| **Release Year** | 69 | 69 | 0 | 100.0% | **OK** |
+| **Default Tempo (BPM)** | 69 | 69 | 0 | 100.0% | **OK** |
+| **Formal Section Breakdown** | 69 | 30 | 39 | 43.5% | Backlog Target |
+| **Measure Sequence Data** | 69 | 69 | 0 | 100.0% | **OK** |
 
 ---
 

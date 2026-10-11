@@ -369,6 +369,102 @@
     }
   },
   {
+    "track_id": "tool_rosetta_stoned",
+    "title": "Rosetta Stoned",
+    "artist": "Tool",
+    "total_measures": 260,
+    "unique_meters": 9,
+    "shift_frequency": 0.1236,
+    "metric_entropy": 2.6239,
+    "meter_distribution": {
+      "4/4": 0.1231,
+      "5/8": 0.2385,
+      "5/4": 0.0692,
+      "9/8": 0.0231,
+      "7/4": 0.0038,
+      "11/8": 0.2769,
+      "7/8": 0.0462,
+      "6/4": 0.1846,
+      "15/4": 0.0346
+    },
+    "transition_matrix": {
+      "4/4": {
+        "4/4": 0.8438,
+        "5/8": 0.125,
+        "9/8": 0.0312
+      },
+      "5/8": {
+        "5/8": 0.8548,
+        "4/4": 0.0484,
+        "5/4": 0.0323,
+        "7/8": 0.0323,
+        "6/4": 0.0323
+      },
+      "5/4": {
+        "5/4": 0.8333,
+        "5/8": 0.0556,
+        "9/8": 0.0556,
+        "11/8": 0.0556
+      },
+      "9/8": {
+        "9/8": 0.6667,
+        "4/4": 0.1667,
+        "7/4": 0.1667
+      },
+      "7/4": {
+        "5/4": 1.0
+      },
+      "11/8": {
+        "11/8": 0.9444,
+        "5/8": 0.0139,
+        "6/4": 0.0278,
+        "7/8": 0.0139
+      },
+      "7/8": {
+        "5/8": 0.1818,
+        "7/8": 0.8182
+      },
+      "6/4": {
+        "6/4": 0.8958,
+        "15/4": 0.0208,
+        "5/8": 0.0208,
+        "11/8": 0.0625
+      },
+      "15/4": {
+        "15/4": 0.8889,
+        "6/4": 0.1111
+      }
+    }
+  },
+  {
+    "track_id": "tool_jambi",
+    "title": "Jambi",
+    "artist": "Tool",
+    "total_measures": 167,
+    "unique_meters": 3,
+    "shift_frequency": 0.0181,
+    "metric_entropy": 0.8628,
+    "meter_distribution": {
+      "9/8": 0.7605,
+      "12/8": 0.2275,
+      "11/8": 0.012
+    },
+    "transition_matrix": {
+      "9/8": {
+        "9/8": 0.9843,
+        "12/8": 0.0079,
+        "11/8": 0.0079
+      },
+      "12/8": {
+        "12/8": 0.9737,
+        "9/8": 0.0263
+      },
+      "11/8": {
+        "11/8": 1.0
+      }
+    }
+  },
+  {
     "track_id": "opeth_atonement",
     "title": "Atonement",
     "artist": "Opeth",
@@ -490,6 +586,44 @@
       "3/8": {
         "4/4": 0.5,
         "2/4": 0.5
+      }
+    }
+  },
+  {
+    "track_id": "dream_theater_finally_free",
+    "title": "Finally Free",
+    "artist": "Dream Theater",
+    "total_measures": 195,
+    "unique_meters": 5,
+    "shift_frequency": 0.0567,
+    "metric_entropy": 0.5715,
+    "meter_distribution": {
+      "4/4": 0.9128,
+      "7/8": 0.0359,
+      "2/4": 0.0103,
+      "6/4": 0.0359,
+      "3/4": 0.0051
+    },
+    "transition_matrix": {
+      "4/4": {
+        "4/4": 0.9718,
+        "7/8": 0.0113,
+        "2/4": 0.0113,
+        "6/4": 0.0056
+      },
+      "7/8": {
+        "7/8": 0.7143,
+        "4/4": 0.2857
+      },
+      "2/4": {
+        "4/4": 1.0
+      },
+      "6/4": {
+        "6/4": 0.8571,
+        "3/4": 0.1429
+      },
+      "3/4": {
+        "4/4": 1.0
       }
     }
   },
@@ -644,6 +778,40 @@
     "transition_matrix": {
       "6/4": {
         "6/4": 1.0
+      }
+    }
+  },
+  {
+    "track_id": "dream_theater_overture_1928_2",
+    "title": "Overture 1928 (2)",
+    "artist": "Dream Theater",
+    "total_measures": 31,
+    "unique_meters": 4,
+    "shift_frequency": 0.3333,
+    "metric_entropy": 1.3864,
+    "meter_distribution": {
+      "4/4": 0.6774,
+      "6/4": 0.1613,
+      "7/4": 0.0968,
+      "2/2": 0.0645
+    },
+    "transition_matrix": {
+      "4/4": {
+        "6/4": 0.05,
+        "4/4": 0.75,
+        "7/4": 0.15,
+        "2/2": 0.05
+      },
+      "6/4": {
+        "6/4": 0.8,
+        "4/4": 0.2
+      },
+      "7/4": {
+        "4/4": 1.0
+      },
+      "2/2": {
+        "2/2": 0.5,
+        "4/4": 0.5
       }
     }
   },
@@ -1076,6 +1244,52 @@
         "2/4": 0.0308
       },
       "2/4": {
+        "4/4": 1.0
+      }
+    }
+  },
+  {
+    "track_id": "tool_vicarious",
+    "title": "Vicarious",
+    "artist": "Tool",
+    "total_measures": 220,
+    "unique_meters": 6,
+    "shift_frequency": 0.137,
+    "metric_entropy": 1.6657,
+    "meter_distribution": {
+      "5/8": 0.4773,
+      "5/4": 0.3818,
+      "6/4": 0.0773,
+      "3/4": 0.0364,
+      "2/4": 0.0182,
+      "4/4": 0.0091
+    },
+    "transition_matrix": {
+      "5/8": {
+        "5/8": 0.981,
+        "5/4": 0.019
+      },
+      "5/4": {
+        "5/4": 0.9167,
+        "6/4": 0.0714,
+        "5/8": 0.0119
+      },
+      "6/4": {
+        "3/4": 0.2353,
+        "5/4": 0.2353,
+        "6/4": 0.2353,
+        "2/4": 0.2353,
+        "4/4": 0.0588
+      },
+      "3/4": {
+        "3/4": 0.5,
+        "5/4": 0.125,
+        "6/4": 0.375
+      },
+      "2/4": {
+        "6/4": 1.0
+      },
+      "4/4": {
         "4/4": 1.0
       }
     }
@@ -1593,6 +1807,57 @@
     }
   },
   {
+    "track_id": "tool_reflection",
+    "title": "Reflection",
+    "artist": "Tool",
+    "total_measures": 246,
+    "unique_meters": 1,
+    "shift_frequency": 0.0,
+    "metric_entropy": 0.0,
+    "meter_distribution": {
+      "4/4": 1.0
+    },
+    "transition_matrix": {
+      "4/4": {
+        "4/4": 1.0
+      }
+    }
+  },
+  {
+    "track_id": "dream_theater_strange_deja_vu",
+    "title": "Strange Deja Vu",
+    "artist": "Dream Theater",
+    "total_measures": 149,
+    "unique_meters": 4,
+    "shift_frequency": 0.1959,
+    "metric_entropy": 0.6444,
+    "meter_distribution": {
+      "4/4": 0.8859,
+      "3/4": 0.0805,
+      "2/4": 0.0134,
+      "7/8": 0.0201
+    },
+    "transition_matrix": {
+      "4/4": {
+        "4/4": 0.8931,
+        "3/4": 0.0763,
+        "2/4": 0.0076,
+        "7/8": 0.0229
+      },
+      "3/4": {
+        "4/4": 0.75,
+        "3/4": 0.1667,
+        "2/4": 0.0833
+      },
+      "2/4": {
+        "4/4": 1.0
+      },
+      "7/8": {
+        "4/4": 1.0
+      }
+    }
+  },
+  {
     "track_id": "epica_the_obsessive_devotion",
     "title": "The Obsessive Devotion",
     "artist": "Epica",
@@ -1993,6 +2258,28 @@
     }
   },
   {
+    "track_id": "tool_triad",
+    "title": "Triad",
+    "artist": "Tool",
+    "total_measures": 115,
+    "unique_meters": 2,
+    "shift_frequency": 0.0175,
+    "metric_entropy": 0.072,
+    "meter_distribution": {
+      "12/8": 0.9913,
+      "6/8": 0.0087
+    },
+    "transition_matrix": {
+      "12/8": {
+        "12/8": 0.9912,
+        "6/8": 0.0088
+      },
+      "6/8": {
+        "12/8": 1.0
+      }
+    }
+  },
+  {
     "track_id": "opeth_demon_of_the_fall",
     "title": "Demon of the fall",
     "artist": "Opeth",
@@ -2021,6 +2308,36 @@
     }
   },
   {
+    "track_id": "tool_the_pot",
+    "title": "The Pot",
+    "artist": "Tool",
+    "total_measures": 126,
+    "unique_meters": 3,
+    "shift_frequency": 0.104,
+    "metric_entropy": 0.8887,
+    "meter_distribution": {
+      "4/4": 0.7698,
+      "9/8": 0.0238,
+      "3/4": 0.2063
+    },
+    "transition_matrix": {
+      "4/4": {
+        "4/4": 0.9479,
+        "9/8": 0.0104,
+        "3/4": 0.0417
+      },
+      "9/8": {
+        "4/4": 0.6667,
+        "3/4": 0.3333
+      },
+      "3/4": {
+        "3/4": 0.8077,
+        "9/8": 0.0769,
+        "4/4": 0.1154
+      }
+    }
+  },
+  {
     "track_id": "opeth_blackwater_park",
     "title": "Blackwater Park",
     "artist": "Opeth",
@@ -2043,6 +2360,45 @@
         "4/4": 1.0
       },
       "6/4": {
+        "4/4": 1.0
+      }
+    }
+  },
+  {
+    "track_id": "dream_theater_the_spirit_carries_on",
+    "title": "The Spirit Carries On",
+    "artist": "Dream Theater",
+    "total_measures": 59,
+    "unique_meters": 2,
+    "shift_frequency": 0.0345,
+    "metric_entropy": 0.1239,
+    "meter_distribution": {
+      "12/8": 0.9831,
+      "6/8": 0.0169
+    },
+    "transition_matrix": {
+      "12/8": {
+        "12/8": 0.9825,
+        "6/8": 0.0175
+      },
+      "6/8": {
+        "12/8": 1.0
+      }
+    }
+  },
+  {
+    "track_id": "tool_disposition",
+    "title": "Disposition",
+    "artist": "Tool",
+    "total_measures": 98,
+    "unique_meters": 1,
+    "shift_frequency": 0.0,
+    "metric_entropy": 0.0,
+    "meter_distribution": {
+      "4/4": 1.0
+    },
+    "transition_matrix": {
+      "4/4": {
         "4/4": 1.0
       }
     }
