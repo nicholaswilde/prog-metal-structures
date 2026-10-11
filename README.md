@@ -2,6 +2,7 @@
 
 <div align="center">
 
+[![CI](https://github.com/nicholaswilde/prog-metal-structures/actions/workflows/ci.yml/badge.svg)](https://github.com/nicholaswilde/prog-metal-structures/actions)
 [![Python](https://img.shields.io/badge/Python-3.10+-cba6f7?style=for-the-badge&logo=python&logoColor=1e1e2e&labelColor=181825)](https://www.python.org/)
 [![Schema](https://img.shields.io/badge/JSON_Schema-Draft_2020--12-89b4fa?style=for-the-badge&logo=json&logoColor=1e1e2e&labelColor=181825)](schemas/)
 [![Theme](https://img.shields.io/badge/Palette-Catppuccin_Mocha-fab387?style=for-the-badge&labelColor=181825)](https://github.com/catppuccin/catppuccin)
